@@ -2,42 +2,82 @@
 <html lang="hu">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>New Life Studio | Önbizalommal a siker felé</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="New Life Studio – Access Bars®, Access Facelift®, testkezelések, coaching és tanfolyamok Egerben.">
+    <title>
+        New Life Studio | Önbizalommal a siker felé
+    </title>
 
-    <meta name="theme-color" content="#f7f4ef">
+    <meta
+        name="description"
+        content="New Life Studio – Access Bars®, Access Facelift®, testkezelések, coaching és tanfolyamok Egerben."
+    >
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta
+        name="theme-color"
+        content="#f7f4ef"
+    >
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- =========================================
+         CSS
+    ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 
 <body>
 
+
 <!-- =========================================
      HEADER / NAVBAR
 ========================================= -->
 
-<header class="navbar" id="navbar">
+<header
+    class="navbar"
+    id="navbar"
+>
 
     <div class="nav-container">
 
+
         <!-- LOGO -->
 
-        <a href="#home" class="logo">
+        <a
+            href="#home"
+            class="logo"
+            aria-label="New Life Studio - Főoldal"
+        >
 
             <span class="logo-main">
                 NEW LIFE
@@ -50,17 +90,23 @@
         </a>
 
 
-        <!-- NAVIGATION -->
+        <!-- DESKTOP / MAIN NAVIGATION -->
 
         <div class="nav-right">
 
-            <nav class="nav-links">
+            <nav
+                class="nav-menu"
+                aria-label="Fő navigáció"
+            >
 
                 <a href="#home">
                     Főoldal
                 </a>
 
-                <a href="idopontfoglalas.html" class="nav-booking">
+                <a
+                    href="idopontfoglalas.html"
+                    class="nav-booking"
+                >
                     Időpontfoglalás
                 </a>
 
@@ -94,14 +140,59 @@
         <button
             class="menu-toggle"
             id="menuToggle"
+            type="button"
             aria-label="Menü megnyitása"
-            aria-expanded="false">
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+        >
 
             <span></span>
             <span></span>
             <span></span>
 
         </button>
+
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="#home">
+            Főoldal
+        </a>
+
+        <a
+            href="idopontfoglalas.html"
+            class="mobile-booking"
+        >
+            Időpontfoglalás
+        </a>
+
+        <a href="#services">
+            Szolgáltatások
+        </a>
+
+        <a href="#programs">
+            Programok
+        </a>
+
+        <a href="#about">
+            Rólam
+        </a>
+
+        <a href="#gallery">
+            Galéria
+        </a>
+
+        <a href="#contact">
+            Kapcsolat
+        </a>
 
     </div>
 
@@ -110,642 +201,353 @@
 
 
 <!-- =========================================
-     HERO
+     MAIN
 ========================================= -->
 
 <main id="home">
 
-<section class="hero" id="hero">
 
-    <div class="hero-overlay"></div>
+    <!-- =========================================
+         HERO
+    ========================================= -->
 
-    <div class="hero-content">
+    <section
+        class="hero"
+        id="hero"
+    >
 
-        <span class="hero-label">
-            NEW LIFE STUDIO
-        </span>
-
-        <h1>
-            Önbizalommal
-            <br>
-            a siker felé
-        </h1>
-
-        <p>
-            Fedezd fel önmagad, teremts új lehetőségeket,
-            és helyezd a fókuszt arra, ami igazán fontos számodra.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="idopontfoglalas.html" class="hero-btn primary-btn">
-                Időpontfoglalás
-            </a>
-
-            <a href="#services" class="hero-btn secondary-btn">
-                Szolgáltatások
-            </a>
-
-        </div>
-
-    </div>
+        <div class="hero-overlay"></div>
 
 
-    <div class="hero-scroll">
+        <div class="hero-content">
 
-        <span>
-            Görgess le
-        </span>
-
-        <span class="scroll-arrow">
-            ↓
-        </span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     INTRO
-========================================= -->
-
-<section class="intro" id="intro">
-
-    <div class="container">
-
-        <div class="intro-content">
-
-            <span class="section-label">
+            <span class="hero-label">
                 NEW LIFE STUDIO
             </span>
 
-            <h2>
-                Egy új nézőpont.
+
+            <h1>
+                Önbizalommal
                 <br>
-                Egy új lehetőség.
-            </h2>
+                a siker felé
+            </h1>
+
 
             <p>
-                A New Life Studio célja, hogy támogasson abban,
-                hogy közelebb kerülj önmagadhoz, felismerd a benned
-                rejlő lehetőségeket, és magabiztosabban haladj
-                a saját utadon.
+                Fedezd fel önmagad, teremts új lehetőségeket,
+                és helyezd a fókuszt arra, ami igazán fontos számodra.
             </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="idopontfoglalas.html"
+                    class="hero-btn primary-btn"
+                >
+                    Időpontfoglalás
+                </a>
+
+
+                <a
+                    href="#services"
+                    class="hero-btn secondary-btn"
+                >
+                    Szolgáltatások
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
+        <div class="hero-scroll">
 
-
-
-<!-- =========================================
-     SERVICES
-========================================= -->
-
-<section class="services" id="services">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                AMIBEN SEGÍTHETEK
+            <span>
+                Görgess le
             </span>
 
-            <h2>
-                Szolgáltatások
-            </h2>
-
-            <p>
-                Fedezd fel azokat a lehetőségeket, amelyek támogatást
-                nyújthatnak a testi-lelki feltöltődésben és a változásban.
-            </p>
+            <span class="scroll-arrow">
+                ↓
+            </span>
 
         </div>
 
-
-        <div class="services-grid">
-
-            <article class="service-card">
-
-                <div class="service-number">
-                    01
-                </div>
-
-                <div class="service-icon">
-                    ✦
-                </div>
-
-                <h3>
-                    Access Bars®
-                </h3>
-
-                <p>
-                    Egy különleges kezelés, amely segíthet ellazulni,
-                    kikapcsolódni és új nézőpontokat felfedezni.
-                </p>
-
-                <a href="#contact" class="service-link">
-                    További információ
-                    <span>→</span>
-                </a>
-
-            </article>
+    </section>
 
 
-            <article class="service-card">
 
-                <div class="service-number">
-                    02
-                </div>
+    <!-- =========================================
+         INTRO
+    ========================================= -->
 
-                <div class="service-icon">
-                    ✧
-                </div>
+    <section
+        class="intro"
+        id="intro"
+    >
 
-                <h3>
-                    Access Facelift®
-                </h3>
+        <div class="container">
+
+            <div class="intro-content">
+
+                <span class="section-label">
+                    NEW LIFE STUDIO
+                </span>
+
+                <h2>
+                    Egy új nézőpont.
+                    <br>
+                    Egy új lehetőség.
+                </h2>
 
                 <p>
-                    Kíméletes kezelés, amely a test és az arc
-                    energetikai folyamataira helyezi a hangsúlyt.
+                    A New Life Studio célja, hogy támogasson abban,
+                    hogy közelebb kerülj önmagadhoz, felismerd a benned
+                    rejlő lehetőségeket, és magabiztosabban haladj
+                    a saját utadon.
                 </p>
 
-                <a href="#contact" class="service-link">
-                    További információ
-                    <span>→</span>
-                </a>
+            </div>
 
-            </article>
+        </div>
+
+    </section>
 
 
-            <article class="service-card">
 
-                <div class="service-number">
-                    03
-                </div>
+    <!-- =========================================
+         SERVICES
+    ========================================= -->
 
-                <div class="service-icon">
-                    ◇
-                </div>
+    <section
+        class="services"
+        id="services"
+    >
 
-                <h3>
-                    Access® testkezelések
-                </h3>
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    AMIBEN SEGÍTHETEK
+                </span>
+
+                <h2>
+                    Szolgáltatások
+                </h2>
 
                 <p>
-                    Testkezelések, amelyek lehetőséget teremtenek
-                    a feltöltődésre, ellazulásra és önmagadra figyelésre.
+                    Fedezd fel azokat a lehetőségeket, amelyek támogatást
+                    nyújthatnak a testi-lelki feltöltődésben és a változásban.
                 </p>
 
-                <a href="#contact" class="service-link">
-                    További információ
-                    <span>→</span>
-                </a>
-
-            </article>
+            </div>
 
 
-            <article class="service-card">
-
-                <div class="service-number">
-                    04
-                </div>
-
-                <div class="service-icon">
-                    ◎
-                </div>
-
-                <h3>
-                    Coaching
-                </h3>
-
-                <p>
-                    Személyes beszélgetések és támogatás ahhoz,
-                    hogy tisztábban lásd a lehetőségeidet és a következő lépéseidet.
-                </p>
-
-                <a href="#contact" class="service-link">
-                    További információ
-                    <span>→</span>
-                </a>
-
-            </article>
+            <div class="services-grid">
 
 
-            <article class="service-card service-card-wide">
+                <!-- SERVICE 1 -->
 
-                <div class="service-number">
-                    05
-                </div>
+                <article class="service-card">
 
-                <div class="service-icon">
-                    ✨
-                </div>
+                    <div class="service-number">
+                        01
+                    </div>
 
-                <div class="service-wide-content">
+                    <div class="service-icon">
+                        ✦
+                    </div>
 
                     <h3>
-                        Komplett kezelés
+                        Access Bars®
                     </h3>
 
                     <p>
-                        Többféle lehetőség egy helyen, személyre szabottan,
-                        a testi és lelki feltöltődés támogatására.
+                        Egy különleges kezelés, amely segíthet ellazulni,
+                        kikapcsolódni és új nézőpontokat felfedezni.
                     </p>
 
-                    <a href="#contact" class="service-link">
+                    <a
+                        href="#contact"
+                        class="service-link"
+                    >
                         További információ
                         <span>→</span>
                     </a>
 
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
+                </article>
 
 
+                <!-- SERVICE 2 -->
 
-<!-- =========================================
-     SERVICES CTA
-========================================= -->
+                <article class="service-card">
 
-<section class="services-cta">
-
-    <div class="container">
-
-        <div class="services-cta-box">
-
-            <div>
-
-                <span class="section-label">
-                    KÉRDÉSED VAN?
-                </span>
-
-                <h2>
-                    Találd meg a számodra megfelelő lehetőséget.
-                </h2>
-
-            </div>
-
-            <a href="idopontfoglalas.html" class="hero-btn primary-btn">
-                Időpontfoglalás
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     PROGRAMS
-========================================= -->
-
-<section class="programs" id="programs">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                LEHETŐSÉGEK
-            </span>
-
-            <h2>
-                Programok és tanfolyamok
-            </h2>
-
-            <p>
-                Ismerj meg új lehetőségeket, szerezz új tapasztalatokat,
-                és indulj el egy számodra inspiráló úton.
-            </p>
-
-        </div>
-
-
-        <div class="programs-grid">
-
-            <article class="program-card">
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program1.jpg"
-                        alt="Access Bars tanfolyam">
-
-                    <span class="program-tag">
-                        TANFOLYAM
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <span class="program-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Access Bars® tanfolyam
-                    </h3>
-
-                    <p>
-                        Ismerkedj meg az Access Bars® módszerével,
-                        és sajátítsd el annak alapjait egy támogató környezetben.
-                    </p>
-
-                    <a href="#contact" class="program-link">
-                        Részletek
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="program-card">
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program2.jpg"
-                        alt="Access Facelift">
-
-                    <span class="program-tag">
-                        PROGRAM
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <span class="program-number">
+                    <div class="service-number">
                         02
-                    </span>
+                    </div>
+
+                    <div class="service-icon">
+                        ✧
+                    </div>
 
                     <h3>
                         Access Facelift®
                     </h3>
 
                     <p>
-                        Fedezd fel az Access Facelift® lehetőségeit,
-                        és tapasztald meg a módszer által kínált
-                        különleges megközelítést.
+                        Kíméletes kezelés, amely a test és az arc
+                        energetikai folyamataira helyezi a hangsúlyt.
                     </p>
 
-                    <a href="#contact" class="program-link">
-                        Részletek
+                    <a
+                        href="#contact"
+                        class="service-link"
+                    >
+                        További információ
                         <span>→</span>
                     </a>
 
-                </div>
-
-            </article>
+                </article>
 
 
-            <article class="program-card">
+                <!-- SERVICE 3 -->
 
-                <div class="program-image">
+                <article class="service-card">
 
-                    <img
-                        src="images/program3.jpg"
-                        alt="Személyes fejlődés">
-
-                    <span class="program-tag">
-                        KURZUS
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <span class="program-number">
+                    <div class="service-number">
                         03
-                    </span>
+                    </div>
+
+                    <div class="service-icon">
+                        ◇
+                    </div>
 
                     <h3>
-                        Személyes fejlődés
+                        Access® testkezelések
                     </h3>
 
                     <p>
-                        Olyan lehetőségek, amelyek segíthetnek abban,
-                        hogy új perspektívákat fedezz fel és tudatosabban
-                        figyelj önmagadra.
+                        Testkezelések, amelyek lehetőséget teremtenek
+                        a feltöltődésre, ellazulásra és önmagadra figyelésre.
                     </p>
 
-                    <a href="#contact" class="program-link">
-                        Részletek
+                    <a
+                        href="#contact"
+                        class="service-link"
+                    >
+                        További információ
                         <span>→</span>
                     </a>
 
-                </div>
-
-            </article>
-
-        </div>
+                </article>
 
 
-        <div class="programs-bottom">
+                <!-- SERVICE 4 -->
 
-            <p>
-                Szeretnél többet megtudni a következő időpontokról?
-            </p>
+                <article class="service-card">
 
-            <a href="idopontfoglalas.html" class="hero-btn primary-btn">
-                Érdeklődöm
-            </a>
+                    <div class="service-number">
+                        04
+                    </div>
 
-        </div>
+                    <div class="service-icon">
+                        ◎
+                    </div>
 
-    </div>
+                    <h3>
+                        Coaching
+                    </h3>
 
-</section>
+                    <p>
+                        Személyes beszélgetések és támogatás ahhoz,
+                        hogy tisztábban lásd a lehetőségeidet
+                        és a következő lépéseidet.
+                    </p>
 
+                    <a
+                        href="#contact"
+                        class="service-link"
+                    >
+                        További információ
+                        <span>→</span>
+                    </a>
 
-
-<!-- =========================================
-     QUOTE
-========================================= -->
-
-<section class="quote-section">
-
-    <div class="container">
-
-        <div class="quote-content">
-
-            <span class="quote-mark">
-                “
-            </span>
-
-            <blockquote>
-                Minden változás egyetlen döntéssel kezdődik.
-            </blockquote>
-
-            <span class="quote-line"></span>
-
-            <p>
-                Adj magadnak lehetőséget arra, hogy valami újat fedezz fel.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+                </article>
 
 
+                <!-- SERVICE 5 -->
 
-<!-- =========================================
-     ABOUT
-========================================= -->
+                <article class="service-card service-card-wide">
 
-<section class="about" id="about">
+                    <div class="service-number">
+                        05
+                    </div>
 
-    <div class="container">
+                    <div class="service-icon">
+                        ✨
+                    </div>
 
-        <div class="about-wrapper">
+                    <div class="service-wide-content">
 
+                        <h3>
+                            Komplett kezelés
+                        </h3>
 
-            <div class="about-image">
+                        <p>
+                            Többféle lehetőség egy helyen,
+                            személyre szabottan, a testi és lelki
+                            feltöltődés támogatására.
+                        </p>
 
-                <div class="about-image-frame">
+                        <a
+                            href="#contact"
+                            class="service-link"
+                        >
+                            További információ
+                            <span>→</span>
+                        </a>
 
-                    <img
-                        src="images/about.jpg"
-                        alt="New Life Studio">
+                    </div>
 
-                </div>
+                </article>
 
-                <div class="about-badge">
-
-                    <span class="about-badge-number">
-                        NEW
-                    </span>
-
-                    <span class="about-badge-text">
-                        LIFE STUDIO
-                    </span>
-
-                </div>
 
             </div>
 
+        </div>
 
-            <div class="about-content">
-
-                <span class="section-label">
-                    RÓLAM
-                </span>
-
-                <h2>
-                    Hiszek abban,
-                    <br>
-                    hogy mindig van
-                    <span>új lehetőség.</span>
-                </h2>
-
-                <p class="about-lead">
-                    A New Life Studio egy olyan hely, ahol egy kicsit
-                    megállhatsz, önmagadra figyelhetsz, és teret adhatsz
-                    annak, ami igazán fontos számodra.
-                </p>
-
-                <p>
-                    A munkám során az a célom, hogy biztonságos,
-                    elfogadó és támogató környezetet teremtsek,
-                    ahol mindenki a saját tempójában fedezheti fel
-                    a benne rejlő lehetőségeket.
-                </p>
-
-                <p>
-                    Legyen szó kezelésről, személyes támogatásról,
-                    tanfolyamról vagy egyszerűen egy kis feltöltődésről,
-                    szeretettel várlak a New Life Studio-ban.
-                </p>
+    </section>
 
 
-                <div class="about-features">
 
-                    <div class="about-feature">
+    <!-- =========================================
+         SERVICES CTA
+    ========================================= -->
 
-                        <span class="feature-icon">
-                            ✦
-                        </span>
+    <section class="services-cta">
 
-                        <div>
+        <div class="container">
 
-                            <h4>
-                                Személyre szabott figyelem
-                            </h4>
+            <div class="services-cta-box">
 
-                            <p>
-                                Rád és az aktuális céljaidra fókuszálva.
-                            </p>
+                <div>
 
-                        </div>
+                    <span class="section-label">
+                        KÉRDÉSED VAN?
+                    </span>
 
-                    </div>
-
-
-                    <div class="about-feature">
-
-                        <span class="feature-icon">
-                            ✧
-                        </span>
-
-                        <div>
-
-                            <h4>
-                                Támogató környezet
-                            </h4>
-
-                            <p>
-                                Egy nyugodt tér, ahol önmagad lehetsz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-feature">
-
-                        <span class="feature-icon">
-                            ◇
-                        </span>
-
-                        <div>
-
-                            <h4>
-                                Új lehetőségek
-                            </h4>
-
-                            <p>
-                                Fedezz fel új nézőpontokat és utakat.
-                            </p>
-
-                        </div>
-
-                    </div>
+                    <h2>
+                        Találd meg a számodra megfelelő lehetőséget.
+                    </h2>
 
                 </div>
 
 
-                <a href="idopontfoglalas.html" class="hero-btn primary-btn">
+                <a
+                    href="idopontfoglalas.html"
+                    class="hero-btn primary-btn"
+                >
                     Időpontfoglalás
                 </a>
 
@@ -753,303 +555,733 @@
 
         </div>
 
-    </div>
+    </section>
 
-</section>
 
 
+    <!-- =========================================
+         PROGRAMS
+    ========================================= -->
 
-<!-- =========================================
-     ABOUT QUOTE
-========================================= -->
+    <section
+        class="programs"
+        id="programs"
+    >
 
-<section class="about-quote">
+        <div class="container">
 
-    <div class="container">
-
-        <div class="about-quote-inner">
-
-            <span class="quote-mark">
-                “
-            </span>
-
-            <h2>
-                Engedd meg magadnak,
-                <br>
-                hogy valami új kezdődjön.
-            </h2>
-
-            <p>
-                A változás lehetősége mindig ott van benned.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     GALLERY
-========================================= -->
-
-<section class="gallery" id="gallery">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                NEW LIFE STUDIO
-            </span>
-
-            <h2>
-                Galéria
-            </h2>
-
-            <p>
-                Egy kis betekintés a New Life Studio hangulatába,
-                ahol a nyugalom, a feltöltődés és az önmagadra figyelés
-                kerül a középpontba.
-            </p>
-
-        </div>
-
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item gallery-large">
-
-                <img
-                    src="images/gallery1.jpg"
-                    alt="New Life Studio galéria">
-
-                <div class="gallery-overlay">
-
-                    <span>
-                        New Life Studio
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="gallery-item">
-
-                <img
-                    src="images/gallery2.jpg"
-                    alt="New Life Studio">
-
-                <div class="gallery-overlay">
-
-                    <span>
-                        New Life Studio
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="gallery-item">
-
-                <img
-                    src="images/gallery3.jpg"
-                    alt="New Life Studio">
-
-                <div class="gallery-overlay">
-
-                    <span>
-                        New Life Studio
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="gallery-item">
-
-                <img
-                    src="images/gallery4.jpg"
-                    alt="New Life Studio">
-
-                <div class="gallery-overlay">
-
-                    <span>
-                        New Life Studio
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="gallery-item gallery-wide">
-
-                <img
-                    src="images/gallery5.jpg"
-                    alt="New Life Studio">
-
-                <div class="gallery-overlay">
-
-                    <span>
-                        New Life Studio
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     GALLERY CTA
-========================================= -->
-
-<section class="gallery-cta">
-
-    <div class="container">
-
-        <div class="gallery-cta-content">
-
-            <span class="section-label">
-                VÁRLAK SZERETETTEL
-            </span>
-
-            <h2>
-                Tapasztald meg személyesen
-                a New Life Studio hangulatát.
-            </h2>
-
-            <a href="idopontfoglalas.html" class="hero-btn primary-btn">
-                Időpontfoglalás
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     BOOKING
-========================================= -->
-
-<section class="booking" id="booking">
-
-    <div class="container">
-
-        <div class="booking-wrapper">
-
-
-            <div class="booking-content">
+            <div class="section-heading">
 
                 <span class="section-label">
-                    IDŐPONTFOGLALÁS
+                    LEHETŐSÉGEK
                 </span>
 
                 <h2>
-                    Foglald le
-                    <br>
-                    a számodra megfelelő időpontot.
+                    Programok és tanfolyamok
                 </h2>
 
                 <p>
-                    Válaszd ki a számodra megfelelő szolgáltatást,
-                    majd foglald le az időpontodat egyszerűen és gyorsan.
+                    Ismerj meg új lehetőségeket, szerezz új tapasztalatokat,
+                    és indulj el egy számodra inspiráló úton.
                 </p>
 
+            </div>
+
+
+            <div class="programs-grid">
+
+
+                <!-- PROGRAM 1 -->
+
+                <article class="program-card">
+
+                    <div class="program-image">
+
+                        <img
+                            src="images/program1.jpg"
+                            alt="Access Bars tanfolyam"
+                            loading="lazy"
+                        >
+
+                        <span class="program-tag">
+                            TANFOLYAM
+                        </span>
+
+                    </div>
+
+
+                    <div class="program-content">
+
+                        <span class="program-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Access Bars® tanfolyam
+                        </h3>
+
+                        <p>
+                            Ismerkedj meg az Access Bars® módszerével,
+                            és sajátítsd el annak alapjait egy támogató
+                            környezetben.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="program-link"
+                        >
+                            Részletek
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROGRAM 2 -->
+
+                <article class="program-card">
+
+                    <div class="program-image">
+
+                        <img
+                            src="images/program2.jpg"
+                            alt="Access Facelift"
+                            loading="lazy"
+                        >
+
+                        <span class="program-tag">
+                            PROGRAM
+                        </span>
+
+                    </div>
+
+
+                    <div class="program-content">
+
+                        <span class="program-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Access Facelift®
+                        </h3>
+
+                        <p>
+                            Fedezd fel az Access Facelift® lehetőségeit,
+                            és tapasztald meg a módszer által kínált
+                            különleges megközelítést.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="program-link"
+                        >
+                            Részletek
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROGRAM 3 -->
+
+                <article class="program-card">
+
+                    <div class="program-image">
+
+                        <img
+                            src="images/program3.jpg"
+                            alt="Személyes fejlődés"
+                            loading="lazy"
+                        >
+
+                        <span class="program-tag">
+                            KURZUS
+                        </span>
+
+                    </div>
+
+
+                    <div class="program-content">
+
+                        <span class="program-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Személyes fejlődés
+                        </h3>
+
+                        <p>
+                            Olyan lehetőségek, amelyek segíthetnek abban,
+                            hogy új perspektívákat fedezz fel és tudatosabban
+                            figyelj önmagadra.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="program-link"
+                        >
+                            Részletek
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="programs-bottom">
+
                 <p>
-                    Ha bizonytalan vagy, hogy melyik lehetőség
-                    lenne számodra a legmegfelelőbb, keress bizalommal.
+                    Szeretnél többet megtudni a következő időpontokról?
                 </p>
 
                 <a
                     href="idopontfoglalas.html"
-                    class="hero-btn primary-btn">
+                    class="hero-btn primary-btn"
+                >
+                    Érdeklődöm
+                </a>
 
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         QUOTE
+    ========================================= -->
+
+    <section class="quote-section">
+
+        <div class="container">
+
+            <div class="quote-content">
+
+                <span class="quote-mark">
+                    “
+                </span>
+
+                <blockquote>
+                    Minden változás egyetlen döntéssel kezdődik.
+                </blockquote>
+
+                <span class="quote-line"></span>
+
+                <p>
+                    Adj magadnak lehetőséget arra,
+                    hogy valami újat fedezz fel.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================= -->
+
+    <section
+        class="about"
+        id="about"
+    >
+
+        <div class="container">
+
+            <div class="about-wrapper">
+
+
+                <!-- ABOUT IMAGE -->
+
+                <div class="about-image">
+
+                    <div class="about-image-frame">
+
+                        <img
+                            src="images/about.jpg"
+                            alt="New Life Studio"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="about-badge">
+
+                        <span class="about-badge-number">
+                            NEW
+                        </span>
+
+                        <span class="about-badge-text">
+                            LIFE STUDIO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABOUT CONTENT -->
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        RÓLAM
+                    </span>
+
+
+                    <h2>
+                        Hiszek abban,
+                        <br>
+                        hogy mindig van
+                        <span>
+                            új lehetőség.
+                        </span>
+                    </h2>
+
+
+                    <p class="about-lead">
+                        A New Life Studio egy olyan hely, ahol egy kicsit
+                        megállhatsz, önmagadra figyelhetsz, és teret adhatsz
+                        annak, ami igazán fontos számodra.
+                    </p>
+
+
+                    <p>
+                        A munkám során az a célom, hogy biztonságos,
+                        elfogadó és támogató környezetet teremtsek,
+                        ahol mindenki a saját tempójában fedezheti fel
+                        a benne rejlő lehetőségeket.
+                    </p>
+
+
+                    <p>
+                        Legyen szó kezelésről, személyes támogatásról,
+                        tanfolyamról vagy egyszerűen egy kis feltöltődésről,
+                        szeretettel várlak a New Life Studio-ban.
+                    </p>
+
+
+                    <div class="about-features">
+
+
+                        <div class="about-feature">
+
+                            <span class="feature-icon">
+                                ✦
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Személyre szabott figyelem
+                                </h4>
+
+                                <p>
+                                    Rád és az aktuális céljaidra fókuszálva.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-feature">
+
+                            <span class="feature-icon">
+                                ✧
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Támogató környezet
+                                </h4>
+
+                                <p>
+                                    Egy nyugodt tér, ahol önmagad lehetsz.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-feature">
+
+                            <span class="feature-icon">
+                                ◇
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Új lehetőségek
+                                </h4>
+
+                                <p>
+                                    Fedezz fel új nézőpontokat és utakat.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <a
+                        href="idopontfoglalas.html"
+                        class="hero-btn primary-btn"
+                    >
+                        Időpontfoglalás
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT QUOTE
+    ========================================= -->
+
+    <section class="about-quote">
+
+        <div class="container">
+
+            <div class="about-quote-inner">
+
+                <span class="quote-mark">
+                    “
+                </span>
+
+                <h2>
+                    Engedd meg magadnak,
+                    <br>
+                    hogy valami új kezdődjön.
+                </h2>
+
+                <p>
+                    A változás lehetősége mindig ott van benned.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         GALLERY
+    ========================================= -->
+
+    <section
+        class="gallery"
+        id="gallery"
+    >
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    NEW LIFE STUDIO
+                </span>
+
+                <h2>
+                    Galéria
+                </h2>
+
+                <p>
+                    Egy kis betekintés a New Life Studio hangulatába,
+                    ahol a nyugalom, a feltöltődés és az önmagadra figyelés
+                    kerül a középpontba.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+
+                <div class="gallery-item gallery-large">
+
+                    <img
+                        src="images/gallery1.jpg"
+                        alt="New Life Studio galéria"
+                        loading="lazy"
+                    >
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            New Life Studio
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/gallery2.jpg"
+                        alt="New Life Studio"
+                        loading="lazy"
+                    >
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            New Life Studio
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/gallery3.jpg"
+                        alt="New Life Studio"
+                        loading="lazy"
+                    >
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            New Life Studio
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="images/gallery4.jpg"
+                        alt="New Life Studio"
+                        loading="lazy"
+                    >
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            New Life Studio
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item gallery-wide">
+
+                    <img
+                        src="images/gallery5.jpg"
+                        alt="New Life Studio"
+                        loading="lazy"
+                    >
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            New Life Studio
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         GALLERY CTA
+    ========================================= -->
+
+    <section class="gallery-cta">
+
+        <div class="container">
+
+            <div class="gallery-cta-content">
+
+                <span class="section-label">
+                    VÁRLAK SZERETETTEL
+                </span>
+
+                <h2>
+                    Tapasztald meg személyesen
+                    a New Life Studio hangulatát.
+                </h2>
+
+                <a
+                    href="idopontfoglalas.html"
+                    class="hero-btn primary-btn"
+                >
                     Időpontfoglalás
-                    <span>→</span>
-
                 </a>
 
             </div>
 
+        </div>
 
-            <div class="booking-info">
+    </section>
 
-                <div class="booking-info-card">
 
-                    <span class="booking-icon">
-                        01
+
+    <!-- =========================================
+         BOOKING
+    ========================================= -->
+
+    <section
+        class="booking"
+        id="booking"
+    >
+
+        <div class="container">
+
+            <div class="booking-wrapper">
+
+
+                <!-- BOOKING CONTENT -->
+
+                <div class="booking-content">
+
+                    <span class="section-label">
+                        IDŐPONTFOGLALÁS
                     </span>
 
-                    <div>
+                    <h2>
+                        Foglald le
+                        <br>
+                        a számodra megfelelő időpontot.
+                    </h2>
 
-                        <h3>
-                            Válaszd ki
-                        </h3>
+                    <p>
+                        Válaszd ki a számodra megfelelő szolgáltatást,
+                        majd foglald le az időpontodat egyszerűen és gyorsan.
+                    </p>
 
-                        <p>
-                            Találd meg a számodra megfelelő szolgáltatást.
-                        </p>
+                    <p>
+                        Ha bizonytalan vagy, hogy melyik lehetőség
+                        lenne számodra a legmegfelelőbb, keress bizalommal.
+                    </p>
 
-                    </div>
+                    <a
+                        href="idopontfoglalas.html"
+                        class="hero-btn primary-btn"
+                    >
+                        Időpontfoglalás
+                        <span>→</span>
+                    </a>
 
                 </div>
 
 
-                <div class="booking-info-card">
+                <!-- BOOKING INFO -->
 
-                    <span class="booking-icon">
-                        02
-                    </span>
+                <div class="booking-info">
 
-                    <div>
 
-                        <h3>
-                            Foglald le
-                        </h3>
+                    <div class="booking-info-card">
 
-                        <p>
-                            Válaszd ki a megfelelő időpontot
-                            az online foglalási oldalon.
-                        </p>
+                        <span class="booking-icon">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Válaszd ki
+                            </h3>
+
+                            <p>
+                                Találd meg a számodra megfelelő szolgáltatást.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-info-card">
+
+                        <span class="booking-icon">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Foglald le
+                            </h3>
+
+                            <p>
+                                Válaszd ki a megfelelő időpontot
+                                az online foglalási oldalon.
+                            </p>
+
+                        </div>
 
                     </div>
 
-                </div>
 
+                    <div class="booking-info-card">
 
-                <div class="booking-info-card">
+                        <span class="booking-icon">
+                            03
+                        </span>
 
-                    <span class="booking-icon">
-                        03
-                    </span>
+                        <div>
 
-                    <div>
+                            <h3>
+                                Találkozunk
+                            </h3>
 
-                        <h3>
-                            Találkozunk
-                        </h3>
+                            <p>
+                                Szeretettel várlak a megbeszélt időpontban.
+                            </p>
 
-                        <p>
-                            Szeretettel várlak a megbeszélt időpontban.
-                        </p>
+                        </div>
 
                     </div>
+
 
                 </div>
 
@@ -1057,127 +1289,128 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
 
-<!-- =========================================
-     CONTACT
-========================================= -->
+    <!-- =========================================
+         CONTACT
+    ========================================= -->
 
-<section class="contact" id="contact">
+    <section
+        class="contact"
+        id="contact"
+    >
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-heading">
 
-            <span class="section-label">
-                KAPCSOLAT
-            </span>
+            <div class="section-heading">
 
-            <h2>
-                Kérdésed van?
-            </h2>
+                <span class="section-label">
+                    KAPCSOLAT
+                </span>
 
-            <p>
-                Ha szeretnél többet megtudni a szolgáltatásokról,
-                programokról vagy az időpontfoglalásról,
-                keress bizalommal.
-            </p>
+                <h2>
+                    Kérdésed van?
+                </h2>
+
+                <p>
+                    Ha szeretnél többet megtudni a szolgáltatásokról,
+                    programokról vagy az időpontfoglalásról,
+                    keress bizalommal.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <span>
+                        E-MAIL
+                    </span>
+
+                    <h3>
+                        newlifestudioeger@gmail.com
+                    </h3>
+
+                    <a
+                        href="mailto:newlifestudioeger@gmail.com"
+                        class="contact-link"
+                    >
+                        Írj üzenetet →
+                    </a>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <span>
+                        TELEFON
+                    </span>
+
+                    <h3>
+                        +36 70 607 8529
+                    </h3>
+
+                    <a
+                        href="tel:+36706078529"
+                        class="contact-link"
+                    >
+                        Hívj bizalommal →
+                    </a>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        ◎
+                    </div>
+
+                    <span>
+                        HELYSZÍN
+                    </span>
+
+                    <h3>
+                        Eger
+                    </h3>
+
+                    <a
+                        href="#"
+                        class="contact-link"
+                    >
+                        Térkép megnyitása →
+                    </a>
+
+                </div>
+
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="contact-grid">
-
-
-            <!-- EMAIL -->
-
-            <div class="contact-card">
-
-                <div class="contact-icon">
-                    ✉
-                </div>
-
-                <span>
-                    E-MAIL
-                </span>
-
-                <h3>
-                    newlifestudioeger@gmail.com
-                </h3>
-
-                <a
-                    href="mailto:newlifestudioeger@gmail.com"
-                    class="contact-link">
-
-                    Írj üzenetet →
-
-                </a>
-
-            </div>
-
-
-            <!-- PHONE -->
-
-            <div class="contact-card">
-
-                <div class="contact-icon">
-                    ☎
-                </div>
-
-                <span>
-                    TELEFON
-                </span>
-
-                <h3>
-                    +36 70 607 8529
-                </h3>
-
-                <a
-                    href="tel:+36706078529"
-                    class="contact-link">
-
-                    Hívj bizalommal →
-
-                </a>
-
-            </div>
-
-
-            <!-- LOCATION -->
-
-            <div class="contact-card">
-
-                <div class="contact-icon">
-                    ◎
-                </div>
-
-                <span>
-                    HELYSZÍN
-                </span>
-
-                <h3>
-                    Eger
-                </h3>
-
-                <a
-                    href="#"
-                    class="contact-link">
-
-                    Térkép megnyitása →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 </main>
 
@@ -1194,11 +1427,14 @@
         <div class="footer-main">
 
 
-            <!-- BRAND -->
+            <!-- FOOTER BRAND -->
 
             <div class="footer-brand">
 
-                <a href="#home" class="footer-logo">
+                <a
+                    href="#home"
+                    class="footer-logo"
+                >
 
                     <span class="logo-main">
                         NEW LIFE
@@ -1218,7 +1454,7 @@
             </div>
 
 
-            <!-- NAVIGATION -->
+            <!-- FOOTER NAVIGATION -->
 
             <div class="footer-column">
 
@@ -1245,7 +1481,7 @@
             </div>
 
 
-            <!-- INFORMATION -->
+            <!-- FOOTER INFORMATION -->
 
             <div class="footer-column">
 
@@ -1272,7 +1508,7 @@
             </div>
 
 
-            <!-- CONTACT -->
+            <!-- FOOTER CONTACT -->
 
             <div class="footer-column footer-contact">
 
@@ -1284,15 +1520,20 @@
                     Eger
                 </p>
 
-                <a href="mailto:newlifestudioeger@gmail.com">
+                <a
+                    href="mailto:newlifestudioeger@gmail.com"
+                >
                     newlifestudioeger@gmail.com
                 </a>
 
-                <a href="tel:+36706078529">
+                <a
+                    href="tel:+36706078529"
+                >
                     +36 70 607 8529
                 </a>
 
             </div>
+
 
         </div>
 
@@ -1302,8 +1543,12 @@
         <div class="footer-bottom">
 
             <p>
-                © <span class="current-year"></span>
-                New Life Studio. Minden jog fenntartva.
+                ©
+                <span class="current-year">
+                    2026
+                </span>
+                New Life Studio.
+                Minden jog fenntartva.
             </p>
 
             <div class="footer-bottom-links">
@@ -1333,7 +1578,9 @@
 <button
     id="topButton"
     class="back-to-top"
-    aria-label="Vissza az oldal tetejére">
+    type="button"
+    aria-label="Vissza az oldal tetejére"
+>
 
     ↑
 
@@ -1348,4 +1595,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
