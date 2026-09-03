@@ -1,733 +1,624 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>New Life Studio | Önbizalommal a siker felé</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Life Studio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- =====================================================
-         NAVIGÁCIÓ
-    ====================================================== -->
-    <header class="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
 
-        <div class="nav-container">
+      <a href="#home" class="logo">
+        <span>NEW LIFE</span>
+        <small>STUDIO</small>
+      </a>
 
-            <!-- LOGÓ -->
-            <a href="#home" class="logo" aria-label="New Life Studio">
+      <div class="nav-right">
 
-                <span class="logo-main">
-                    NEW LIFE
-                </span>
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
 
-                <span class="logo-sub">
-                    STUDIO
-                </span>
+          <a href="https://www.instagram.com/coachbysusan/" target="_blank" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </a>
 
-            </a>
+          <a href="https://www.facebook.com/newlifestudioeger/" target="_blank" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"></path>
+            </svg>
+          </a>
 
-
-            <!-- SOCIAL IKONOK -->
-            <div class="social-links">
-
-                <!-- INSTAGRAM -->
-                <a
-                    href="https://www.instagram.com/coachbysusan/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    class="social-icon"
-                >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <rect
-                            x="3"
-                            y="3"
-                            width="18"
-                            height="18"
-                            rx="5"
-                        ></rect>
-
-                        <circle
-                            cx="12"
-                            cy="12"
-                            r="4"
-                        ></circle>
-
-                        <circle
-                            cx="17.5"
-                            cy="6.5"
-                            r="1"
-                        ></circle>
-                    </svg>
-                </a>
-
-
-                <!-- FACEBOOK -->
-                <a
-                    href="https://www.facebook.com/newlifestudioeger/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook"
-                    class="social-icon"
-                >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-
-                        <path d="
-                            M14 8h3V4h-3
-                            c-3.3 0-5 1.7-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9
-                            c0-.7.3-1 1-1z
-                        "></path>
-
-                    </svg>
-                </a>
-
-
-                <!-- TIKTOK -->
-                <a
-                    href="https://www.tiktok.com/@zsuzsa.kocsis21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="TikTok"
-                    class="social-icon"
-                >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-
-                        <path d="
-                            M15 3
-                            c.4 2.2 1.7 3.7 4 4
-                            v3.2
-                            c-1.5-.1-2.8-.5-4-1.3
-                            v6.6
-                            c0 4-2.7 6.5-6.2 6.5
-                            C5.5 22 3 19.7 3 16.5
-                            c0-3.4 2.7-6 6.2-6
-                            .3 0 .7 0 1 .1
-                            v3.5
-                            c-.3-.1-.6-.2-1-.2
-                            -1.4 0-2.5 1-2.5 2.5
-                            s1 2.5 2.5 2.5
-                            c1.7 0 2.6-1.1 2.6-3V3H15z
-                        "></path>
-
-                    </svg>
-                </a>
-
-            </div>
-
-
-            <!-- IDŐPONTFOGLALÁS -->
-            <!-- KÉSŐBB CSAK A HREF-ET KELL CSERÉLNI -->
-            <a
-                href="#idopontfoglalas"
-                class="nav-booking"
-            >
-                Időpontfoglalás
-            </a>
-
-
-            <!-- MENÜ -->
-            <nav class="nav-menu" aria-label="Fő navigáció">
-
-                <a
-                    href="#home"
-                    class="active"
-                >
-                    Főoldal
-                </a>
-
-                <a href="#idopontfoglalas">
-                    Időpontfoglalás
-                </a>
-
-                <a href="#szolgaltatasok">
-                    Szolgáltatások
-                </a>
-
-                <a href="#programok">
-                    Programok
-                </a>
-
-                <a href="#rolam">
-                    Rólam
-                </a>
-
-                <a href="#galeria">
-                    Galéria
-                </a>
-
-                <a href="#kapcsolat">
-                    Kapcsolat
-                </a>
-
-            </nav>
+          <a href="https://www.tiktok.com/@zsuzsa.kocsis21" target="_blank" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 3v10.2a3.5 3.5 0 1 1-3-3.45V6.7A7.1 7.1 0 1 0 17 13.5V8.2c1.2 1 2.7 1.6 4.3 1.6V6.1C18.4 6.1 16.2 4.8 15.2 3H14z"></path>
+            </svg>
+          </a>
 
         </div>
 
-    </header>
+        <!-- KIEMELT IDŐPONTFOGLALÁS -->
+        <a href="#idopontfoglalas" class="nav-booking">
+          Időpontfoglalás
+        </a>
+
+        <!-- MENÜ -->
+        <nav class="nav-menu nav-links">
+          <a href="#home">Főoldal</a>
+          <a href="#szolgaltatasok">Szolgáltatások</a>
+          <a href="#arlista">Árlista</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
 
 
-    <!-- =====================================================
-         FŐ TARTALOM
-    ====================================================== -->
-    <main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <p class="hero-kicker">NEW LIFE STUDIO</p>
+
+      <h1>Önbizalommal a<br>siker felé</h1>
+
+      <p class="hero-text">
+        Inspiráció, stresszoldás és személyes támogatás
+        egy nyugodtabb, kiegyensúlyozottabb életért.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#szolgaltatasok" class="btn btn-primary">
+          Szolgáltatások
+        </a>
+
+        <a href="#idopontfoglalas" class="btn btn-outline">
+          Időpontfoglalás
+        </a>
+      </div>
+
+    </div>
+
+    <a href="#szolgaltatasok" class="scroll-down">
+      <span></span>
+    </a>
+
+  </section>
 
 
-        <!-- =================================================
-             HERO
-        ================================================== -->
-        <section
-            id="home"
-            class="hero"
-        >
+  <!-- SZOLGÁLTATÁSOK -->
+  <section id="szolgaltatasok" class="services-section">
 
-            <div class="hero-overlay"></div>
+    <div class="section-container">
 
+      <div class="section-heading">
+        <p class="section-kicker">AMIBEN SEGÍTENI TUDUNK</p>
+        <h2>Szolgáltatásaink</h2>
+        <p>
+          Találd meg azt a támogatást és feltöltődést,
+          amelyre éppen szükséged van.
+        </p>
+      </div>
 
-            <div class="hero-content">
+      <div class="services-grid">
 
-                <div class="hero-eyebrow">
-                    NEW LIFE STUDIO
-                </div>
+        <!-- 1 -->
+        <article class="service-card">
 
+          <img
+            src="images/service-facelift.jpg"
+            alt="Access Facelift és Access Testkezelések"
+            class="service-image"
+          >
 
-                <h1>
-                    Önbizalommal
-                    <br>
-                    <span>a siker felé</span>
-                </h1>
+          <div class="service-content">
 
+            <h3>
+              Fiatalítás, Stresszoldás / Access® Facelift és
+              Access® Testkezelések
+            </h3>
 
-                <p class="hero-text">
-                    Fedezd fel önmagad, teremts új lehetőségeket,
-                    és helyezd a fókuszt arra, ami igazán fontos számodra.
-                </p>
+            <p>
+              (majdnem 60 féle testkezelésből választhatsz).
+            </p>
 
+            <p>
+              <strong>Access® Facelift – energetikai ránctalanítás
+              testkezelés:</strong> egy bizonyos energetikai technika.
+            </p>
 
-                <div class="hero-buttons">
+            <p>
+              Az Access® Facelift segíthet elengedni a korábbi stresszt
+              és blokkokat, amelyek befolyásolhatják az arc megjelenését
+              és kisugárzását. Az energiamozgás fokozása és az arc
+              energetikai frissítése által az Access Facelift segíthet
+              abban, hogy a bőr ragyogóbb, fiatalosabb és vitalizáltabb legyen.
+            </p>
 
-                    <a
-                        href="#idopontfoglalas"
-                        class="btn btn-primary"
-                    >
-                        Időpontfoglalás
-                    </a>
+            <p>
+              A kezelés időtartama kb. 60–70 perc.
+            </p>
 
-
-                    <a
-                        href="#szolgaltatasok"
-                        class="btn btn-secondary"
-                    >
-                        Szolgáltatások
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- GÖRGESS LE -->
-            <a
-                href="#szolgaltatasok"
-                class="scroll-down"
-            >
-
-                <span>
-                    Görgess le
-                </span>
-
-                <span class="arrow">
-                    ↓
-                </span>
-
+            <a href="#kapcsolat" class="service-button">
+              Rólunk
             </a>
 
-        </section>
+          </div>
+        </article>
 
 
-        <!-- =================================================
-             SZOLGÁLTATÁSOK
-        ================================================== -->
-        <section
-            id="szolgaltatasok"
-            class="services-section"
+        <!-- 2 -->
+        <article class="service-card">
+
+          <img
+            src="images/service-coaching.jpg"
+            alt="Coaching beszélgetés"
+            class="service-image"
+          >
+
+          <div class="service-content">
+
+            <h3>
+              Inspiráció / Coaching beszélgetések
+            </h3>
+
+            <p>
+              A coaching célja, hogy támogassa a hozzád közelebb álló
+              célok és lehetőségek felismerését, valamint segítsen
+              tudatosabban rálátni a jelenlegi helyzetedre.
+            </p>
+
+            <p>
+              A coaching nem terápia és nem tanácsadás, hanem egy
+              támogató, inspiráló beszélgetési folyamat.
+            </p>
+
+            <p>
+              30 vagy 60 perces szakaszokban vehető igénybe.
+            </p>
+
+            <a href="#kapcsolat" class="service-button">
+              Rólunk
+            </a>
+
+          </div>
+        </article>
+
+
+        <!-- 3 -->
+        <article class="service-card">
+
+          <img
+            src="images/service-complete.jpg"
+            alt="Komplett szolgáltatás"
+            class="service-image"
+          >
+
+          <div class="service-content">
+
+            <h3>
+              Inspiráció, Stresszoldás / Komplett szolgáltatást
+              igénybe vevőknek
+            </h3>
+
+            <p>
+              A szolgáltatás coach beszélgetéssel kezdődik,
+              majd Access Bars energetikai kezeléssel zárul.
+            </p>
+
+            <p>
+              A két módszer kombinációja segíthet abban, hogy a
+              beszélgetés után egy nyugodtabb, energetikailag
+              kiegyensúlyozottabb állapotot is megtapasztalj.
+            </p>
+
+            <p>
+              60 vagy 90 perces időtartamban vehető igénybe.
+            </p>
+
+            <a href="#kapcsolat" class="service-button">
+              Rólunk
+            </a>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- IDŐPONTFOGLALÁS -->
+  <section id="idopontfoglalas" class="booking-section">
+
+    <div class="section-container">
+
+      <div class="booking-content">
+
+        <p class="section-kicker">KEZDJÜK EL</p>
+
+        <h2>Időpontfoglalás</h2>
+
+        <p>
+          Válaszd ki a számodra megfelelő időpontot,
+          és tedd meg az első lépést egy kiegyensúlyozottabb,
+          inspirálóbb élet felé.
+        </p>
+
+        <a href="#" class="btn btn-primary">
+          Időpontot foglalok
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ÁRLISTA -->
+  <section id="arlista" class="prices-section">
+
+    <div class="section-container">
+
+      <div class="section-heading">
+        <p class="section-kicker">ÁRAINK</p>
+        <h2>Árak, Hozzájárulások</h2>
+        <p>
+          Szolgáltatásaink aktuális árai és bérletlehetőségei.
+        </p>
+      </div>
+
+
+      <div class="price-list">
+
+
+        <!-- ACCESS BARS 60 -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>Access Bars® kezelés 60 perc</h3>
+
+            <p>
+              (45 perc kezelés + 15 perc beszélgetés)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            18 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- ACCESS BARS 60-70 -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>Access Bars® kezelés</h3>
+
+            <p>
+              (60–70 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            18 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- ACCESS BARS 90 -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>Access Bars® kezelés 90 perc</h3>
+
+            <p>
+              (60 perc kezelés + 30 perc beszélgetés)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            25 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- TESTKEZELÉS -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>Access® testkezelések</h3>
+
+            <p>
+              (60–70 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            18 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- FACELIFT -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>Access Energetikai Facelift® kezelés</h3>
+
+            <p>
+              (60 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            20 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- COACHING 30 -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>
+              Szóbeli segítő beszélgetés, Coaching
+            </h3>
+
+            <p>
+              (telefonon, személyesen, online)<br>
+              (30 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            9 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- COACHING 50 -->
+        <article class="price-card">
+
+          <div class="price-info">
+
+            <h3>
+              Szóbeli segítő beszélgetés, Coaching
+            </h3>
+
+            <p>
+              (telefonon, személyesen, online)<br>
+              (50 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            18 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- COACHING BÉRLET 30 -->
+        <article class="price-card price-card-large">
+
+          <div class="price-info">
+
+            <h3>
+              Bérlet 3 (+1 féláron) alkalmas Coaching csomag
+            </h3>
+
+            <p>
+              Szóbeli segítő beszélgetés, Coaching<br>
+              (telefonon, személyesen, online)<br>
+              (30 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            31 500 Ft
+          </div>
+
+        </article>
+
+
+        <!-- COACHING BÉRLET 60 -->
+        <article class="price-card price-card-large">
+
+          <div class="price-info">
+
+            <h3>
+              Bérlet 3 (+1 féláron) alkalmas Coaching csomag
+            </h3>
+
+            <p>
+              Szóbeli segítő beszélgetés, Coaching<br>
+              (telefonon, személyesen, online)<br>
+              (60 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            63 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- ACCESS BARS BÉRLET -->
+        <article class="price-card price-card-large">
+
+          <div class="price-info">
+
+            <h3>
+              Bérlet 3 (+1 féláron) alkalmas Access Bars® kezelési Csomag
+            </h3>
+
+            <p>
+              (60–70 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            63 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- ACCESS TESTKEZELÉS BÉRLET -->
+        <article class="price-card price-card-large">
+
+          <div class="price-info">
+
+            <h3>
+              Bérlet 3 (+1 féláron) alkalmas Access® Testkezelési Csomag
+            </h3>
+
+            <p>
+              (60–70 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            63 000 Ft
+          </div>
+
+        </article>
+
+
+        <!-- ACCESS FACELIFT BÉRLET -->
+        <article class="price-card price-card-large">
+
+          <div class="price-info">
+
+            <h3>
+              Bérlet 3 (+1 féláron) alkalmas Access Facelift®
+              Testkezelés csomag
+            </h3>
+
+            <p>
+              (60–70 perc)
+            </p>
+
+          </div>
+
+          <div class="price-value">
+            70 000 Ft
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KAPCSOLAT -->
+  <section id="kapcsolat" class="contact-section">
+
+    <div class="section-container">
+
+      <div class="section-heading">
+
+        <p class="section-kicker">KAPCSOLAT</p>
+
+        <h2>Lépj velünk kapcsolatba</h2>
+
+        <p>
+          Keress minket bizalommal az alábbi elérhetőségeken.
+        </p>
+
+      </div>
+
+
+      <div class="contact-details">
+
+        <a
+          href="tel:+36706078529"
+          class="contact-detail"
         >
+          <span class="contact-label">Telefon</span>
+          <span class="contact-value">+36 70 607 8529</span>
+        </a>
 
-            <div class="services-container">
 
-
-                <div class="services-heading">
-
-                    <span>
-                        NEW LIFE STUDIO
-                    </span>
-
-                    <h2>
-                        Szolgáltatások
-                    </h2>
-
-                    <p>
-                        Fedezd fel azokat a lehetőségeket, amelyek segíthetnek
-                        a testi-lelki feltöltődésben és a tudatosabb életben.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-
-                    <!-- =====================================
-                         1. SZOLGÁLTATÁS
-                    ====================================== -->
-                    <article class="service-card">
-
-
-                        <div class="service-image">
-
-                            <img
-                                src="images/service-facelift.jpg"
-                                alt="Access Facelift és Access Testkezelések"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="service-content">
-
-
-                            <h3>
-
-                                <span class="quote-mark">
-                                    »
-                                </span>
-
-                                Fiatalítás, Stresszoldás
-                                <br>
-                                Access® Facelift és
-                                <br>
-                                Access® Testkezelések
-
-                            </h3>
-
-
-                            <p class="service-intro">
-
-                                (majdnem 60 féle testkezelésből választhatsz).
-
-                            </p>
-
-
-                            <p>
-
-                                <strong>
-                                    Access® Facelift – energetikai
-                                    ránctalanítás testkezelés:
-                                </strong>
-
-                                egy bizonyos energetikai technika.
-
-                            </p>
-
-
-                            <p>
-
-                                <strong>
-                                    Az Access® Facelift segíthet elengedni
-                                    a korábbi stresszt és blokkokat, amelyek
-                                    befolyásolhatják az arc megjelenését
-                                    és kisugárzását.
-                                </strong>
-
-                                Az energiamozgás fokozása és az arc energetikai
-                                frissítése által az Access Facelift segíthet
-                                abban, hogy a
-
-                                <strong>
-                                    bőr ragyogóbb, fiatalosabb
-                                </strong>
-
-                                és vitalizáltabb legyen.
-
-                            </p>
-
-
-                            <p>
-                                A kezelés időtartama kb. 60–70 perc.
-                            </p>
-
-
-                            <a
-                                href="#rolam"
-                                class="service-button"
-                            >
-                                Rólunk
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- =====================================
-                         2. SZOLGÁLTATÁS
-                    ====================================== -->
-                    <article class="service-card">
-
-
-                        <div class="service-image">
-
-                            <img
-                                src="images/service-coaching.jpg"
-                                alt="Coaching beszélgetések"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="service-content">
-
-
-                            <h3>
-
-                                <span class="quote-mark">
-                                    »
-                                </span>
-
-                                Inspiráció
-                                <br>
-                                Coaching beszélgetések
-
-                            </h3>
-
-
-                            <p>
-
-                                A
-
-                                <strong>
-                                    coaching célja, hogy segítsen az ügyfélnek
-                                    felismerni és megváltoztatni azokat
-                                    a területeket az életében, amelyekben
-                                    elégedetlen vagy ahol problémák vannak.
-                                </strong>
-
-                            </p>
-
-
-                            <p>
-
-                                Fontos megjegyezni, hogy a coaching nem
-                                terápia vagy tanácsadás.
-
-                                A coach nem adja meg a válaszokat, hanem
-                                segít az ügyfélnek saját belső erőforrásait
-                                felhasználni és saját megoldásokat találni
-                                a problémákra.
-
-                            </p>
-
-
-                            <p>
-
-                                Az időtartam általában 30 vagy 60 perces
-                                szakaszokban történik, ahol az ügyfél és
-                                a coach közösen dolgoznak a célkitűzéseken.
-
-                            </p>
-
-
-                            <a
-                                href="#rolam"
-                                class="service-button"
-                            >
-                                Rólunk
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- =====================================
-                         3. SZOLGÁLTATÁS
-                    ====================================== -->
-                    <article class="service-card">
-
-
-                        <div class="service-image">
-
-                            <img
-                                src="images/service-complete.jpg"
-                                alt="Komplett coaching és Access Bars szolgáltatás"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="service-content">
-
-
-                            <h3>
-
-                                <span class="quote-mark">
-                                    »
-                                </span>
-
-                                Inspiráció, Stresszoldás
-                                <br>
-                                Komplett szolgáltatást
-                                <br>
-                                igénybe vevőknek
-
-                            </h3>
-
-
-                            <p>
-
-                                Ezen szolgáltatás egy coach beszélgetéssel
-                                kezdődik, majd Az Access Bars® energetikai
-                                kezeléssel zárul.
-
-                            </p>
-
-
-                            <p>
-
-                                Ez a komplett szolgáltatás lehetőséget nyújt
-                                a vendégek számára, hogy a coach beszélgetés
-                                és az Access Bars® kezelés kombinációjával
-                                felfedezzék és átalakítsák azokat a korlátozó
-                                gondolatokat és érzelmeket, amelyek
-                                akadályozhatják őket az általuk kívánt élet
-                                megteremtésében.
-
-                            </p>
-
-
-                            <p>
-
-                                A kezelés időtartama általában 60 vagy 90 perc,
-                                attól függően, hogy melyik lehetőséget választja.
-
-                            </p>
-
-
-                            <a
-                                href="#rolam"
-                                class="service-button"
-                            >
-                                Rólunk
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             IDŐPONTFOGLALÁS
-        ================================================== -->
-        <section
-            id="idopontfoglalas"
-            class="content-section"
+        <a
+          href="mailto:newlifestudioeger@gmail.com"
+          class="contact-detail"
         >
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value">
+            newlifestudioeger@gmail.com
+          </span>
+        </a>
 
-            <div class="section-inner">
+      </div>
 
-                <span class="section-label">
-                    IDŐPONTFOGLALÁS
-                </span>
+    </div>
 
-                <h2>
-                    Foglald le az időpontod
-                </h2>
-
-                <p>
-                    Válaszd ki a számodra megfelelő időpontot,
-                    és induljunk el együtt egy új úton.
-                </p>
-
-                <a
-                    href="#"
-                    class="btn btn-primary"
-                >
-                    Időpontfoglalás
-                </a>
-
-            </div>
-
-        </section>
+  </section>
 
 
-        <!-- =================================================
-             PROGRAMOK
-        ================================================== -->
-        <section
-            id="programok"
-            class="content-section"
-        >
+  <!-- FOOTER -->
+  <footer class="footer">
 
-            <div class="section-inner">
+    <div class="section-container">
 
-                <span class="section-label">
-                    PROGRAMOK
-                </span>
+      <div class="footer-logo">
+        NEW LIFE STUDIO
+      </div>
 
-                <h2>
-                    Programok
-                </h2>
+      <p>
+        © 2026 New Life Studio. Minden jog fenntartva.
+      </p>
 
-                <p>
-                    Fedezd fel a következő eseményeket,
-                    workshopokat és programokat.
-                </p>
+    </div>
 
-            </div>
-
-        </section>
+  </footer>
 
 
-        <!-- =================================================
-             RÓLAM
-        ================================================== -->
-        <section
-            id="rolam"
-            class="content-section"
-        >
-
-            <div class="section-inner">
-
-                <span class="section-label">
-                    ISMERJ MEG
-                </span>
-
-                <h2>
-                    Rólam
-                </h2>
-
-                <p>
-                    A New Life Studio célja, hogy támogatást adjak
-                    ahhoz, hogy magabiztosabban haladj a saját utadon.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             GALÉRIA
-        ================================================== -->
-        <section
-            id="galeria"
-            class="content-section"
-        >
-
-            <div class="section-inner">
-
-                <span class="section-label">
-                    GALÉRIA
-                </span>
-
-                <h2>
-                    Galéria
-                </h2>
-
-                <p>
-                    Hamarosan itt találod a New Life Studio képeit
-                    és eseményeinek pillanatait.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             KAPCSOLAT
-        ================================================== -->
-        <section
-            id="kapcsolat"
-            class="contact-section"
-        >
-
-            <div class="contact-content">
-
-                <span class="section-label">
-                    VEDD FEL VELEM A KAPCSOLATOT
-                </span>
-
-
-                <h2>
-                    Lépj velünk kapcsolatba
-                </h2>
-
-
-                <div class="contact-details">
-
-
-                    <a
-                        href="tel:+36706078529"
-                        class="contact-detail"
-                    >
-
-                        <span class="contact-label">
-                            Telefon
-                        </span>
-
-                        <span class="contact-value">
-                            +36 70 607 8529
-                        </span>
-
-                    </a>
-
-
-                    <a
-                        href="mailto:newlifestudioeger@gmail.com"
-                        class="contact-detail"
-                    >
-
-                        <span class="contact-label">
-                            E-mail
-                        </span>
-
-                        <span class="contact-value">
-                            newlifestudioeger@gmail.com
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
