@@ -37,6 +37,7 @@ img {
 
 .navbar {
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -54,15 +55,16 @@ img {
     -webkit-backdrop-filter: blur(16px);
 }
 
+
 .nav-container {
     width: min(1400px, calc(100% - 80px));
+
     height: 100%;
 
     margin: 0 auto;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     gap: 20px;
 }
@@ -85,6 +87,7 @@ img {
 .logo span {
     font-size: 20px;
     font-weight: 700;
+
     letter-spacing: 2.5px;
 }
 
@@ -93,6 +96,7 @@ img {
 
     font-size: 9px;
     font-weight: 600;
+
     letter-spacing: 4px;
 
     color: #c39a55;
@@ -108,6 +112,7 @@ img {
     align-items: center;
 
     flex: 1;
+
     justify-content: flex-end;
 
     gap: 14px;
@@ -121,6 +126,7 @@ img {
 .social-icons {
     display: flex;
     align-items: center;
+
     gap: 7px;
 
     flex-shrink: 0;
@@ -147,7 +153,8 @@ img {
     transition:
         transform .25s ease,
         background .25s ease,
-        border-color .25s ease;
+        border-color .25s ease,
+        color .25s ease;
 }
 
 .social-icon:hover {
@@ -167,7 +174,9 @@ img {
     height: 15px;
 
     fill: none;
+
     stroke: currentColor;
+
     stroke-width: 1.8;
 }
 
@@ -209,11 +218,13 @@ img {
     transition:
         background .25s ease,
         border-color .25s ease,
-        transform .25s ease;
+        transform .25s ease,
+        color .25s ease;
 }
 
 .nav-booking:hover {
     background: #c39a55;
+
     border-color: #c39a55;
 
     color: #171614;
@@ -288,6 +299,7 @@ img {
     position: relative;
 
     min-height: 100vh;
+
     width: 100%;
 
     display: flex;
@@ -300,7 +312,9 @@ img {
         url("images/hero-bg.jpg");
 
     background-size: cover;
+
     background-position: center center;
+
     background-repeat: no-repeat;
 }
 
@@ -311,6 +325,7 @@ img {
 
 .hero-overlay {
     position: absolute;
+
     inset: 0;
 
     z-index: 1;
@@ -381,6 +396,7 @@ img {
     color: rgba(255,255,255,.82);
 
     font-size: 16px;
+
     line-height: 1.8;
 }
 
@@ -391,6 +407,7 @@ img {
 
 .hero-buttons {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -403,6 +420,7 @@ img {
     min-width: 165px;
 
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
@@ -416,7 +434,8 @@ img {
     transition:
         transform .25s ease,
         background .25s ease,
-        border-color .25s ease;
+        border-color .25s ease,
+        color .25s ease;
 }
 
 .btn:hover {
@@ -425,13 +444,16 @@ img {
 
 .btn-primary {
     background: #ffffff;
-    color: #171614;
 
-    border: 1px solid #ffffff;
+    border:
+        1px solid #ffffff;
+
+    color: #171614;
 }
 
 .btn-primary:hover {
     background: #e8d5b7;
+
     border-color: #e8d5b7;
 }
 
@@ -482,12 +504,16 @@ img {
     width: 18px;
     height: 18px;
 
-    border-right: 1px solid #c39a55;
-    border-bottom: 1px solid #c39a55;
+    border-right:
+        1px solid #c39a55;
+
+    border-bottom:
+        1px solid #c39a55;
 
     transform: rotate(45deg);
 
-    transition: transform .25s ease;
+    transition:
+        transform .25s ease;
 }
 
 .scroll-down:hover span {
@@ -502,30 +528,20 @@ img {
 ========================================= */
 
 .section-container {
-    width: min(1240px, calc(100% - 60px));
+    width:
+        min(1240px, calc(100% - 60px));
 
     margin: 0 auto;
 }
 
 .section-heading {
-    width: min(800px, 100%);
+    width:
+        min(800px, 100%);
 
-    margin: 0 auto 60px;
+    margin:
+        0 auto 60px;
 
     text-align: center;
-}
-
-.section-kicker {
-    margin-bottom: 15px;
-
-    color: #c39a55;
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 5px;
-
-    text-transform: uppercase;
 }
 
 .section-heading h2 {
@@ -538,7 +554,8 @@ img {
         "Times New Roman",
         serif;
 
-    font-size: clamp(42px, 5vw, 70px);
+    font-size:
+        clamp(42px, 5vw, 70px);
 
     line-height: 1;
 
@@ -548,11 +565,13 @@ img {
 }
 
 .section-heading > p:last-child {
-    width: min(650px, 100%);
+    width:
+        min(650px, 100%);
 
     margin: 0 auto;
 
-    color: rgba(255,255,255,.65);
+    color:
+        rgba(255,255,255,.65);
 
     font-size: 16px;
 
@@ -605,6 +624,13 @@ img {
 
     border:
         1px solid rgba(195, 154, 85, 0.18);
+
+    transition:
+        transform .5s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.015);
 }
 
 .service-content {
@@ -627,6 +653,7 @@ img {
         serif;
 
     font-size: 25px;
+
     line-height: 1.3;
 
     font-style: italic;
@@ -635,14 +662,17 @@ img {
 .service-content p {
     margin-bottom: 17px;
 
-    color: rgba(255,255,255,.70);
+    color:
+        rgba(255,255,255,.70);
 
     font-size: 15px;
+
     line-height: 1.65;
 }
 
 .service-content strong {
     color: #ffffff;
+
     font-weight: 700;
 }
 
@@ -652,6 +682,7 @@ img {
     display: inline-flex;
 
     margin-top: auto;
+
     padding: 11px 20px;
 
     border:
@@ -660,6 +691,7 @@ img {
     color: #c39a55;
 
     font-size: 10px;
+
     font-weight: 700;
 
     letter-spacing: 1.5px;
@@ -674,60 +706,10 @@ img {
 
 .service-button:hover {
     background: #c39a55;
+
     color: #11100e;
 
     transform: translateY(-2px);
-}
-
-
-/* =========================================
-   IDŐPONTFOGLALÁS
-========================================= */
-
-.booking-section {
-    padding: 120px 0;
-
-    background:
-        linear-gradient(
-            rgba(17, 16, 14, 0.92),
-            rgba(17, 16, 14, 0.92)
-        ),
-        url("images/hero-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.booking-content {
-    width: min(760px, 100%);
-
-    margin: 0 auto;
-
-    text-align: center;
-}
-
-.booking-content h2 {
-    margin-bottom: 20px;
-
-    color: #ffffff;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: clamp(40px, 5vw, 60px);
-
-    font-weight: 400;
-    line-height: 1.1;
-}
-
-.booking-content > p:not(.section-kicker) {
-    margin-bottom: 32px;
-
-    color: rgba(255,255,255,.70);
-
-    font-size: 16px;
 }
 
 
@@ -739,10 +721,13 @@ img {
     padding: 120px 0;
 
     background: #11100e;
+
+    color: #ffffff;
 }
 
 .price-list {
-    width: min(1050px, 100%);
+    width:
+        min(1050px, 100%);
 
     margin: 0 auto;
 
@@ -756,6 +741,7 @@ img {
     width: 100%;
 
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
@@ -785,6 +771,7 @@ img {
 
 .price-info {
     flex: 1;
+
     min-width: 0;
 }
 
@@ -799,6 +786,7 @@ img {
         serif;
 
     font-size: 21px;
+
     font-weight: 400;
 
     line-height: 1.35;
@@ -823,6 +811,7 @@ img {
         serif;
 
     font-size: 24px;
+
     font-weight: 400;
 
     white-space: nowrap;
@@ -845,7 +834,8 @@ img {
 }
 
 .contact-details {
-    width: min(800px, 100%);
+    width:
+        min(800px, 100%);
 
     margin: 0 auto;
 
@@ -859,6 +849,7 @@ img {
 
 .contact-detail {
     display: flex;
+
     flex-direction: column;
 
     padding: 28px 30px;
@@ -886,6 +877,7 @@ img {
     color: #c39a55;
 
     font-size: 10px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -928,6 +920,7 @@ img {
     color: #c39a55;
 
     font-size: 13px;
+
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -947,7 +940,8 @@ img {
 @media (max-width: 1150px) {
 
     .nav-container {
-        width: min(100% - 40px, 1400px);
+        width:
+            min(100% - 40px, 1400px);
     }
 
     .nav-booking {
@@ -956,6 +950,7 @@ img {
 
     .nav-menu {
         gap: 17px;
+
         margin-left: 16px;
     }
 
@@ -966,7 +961,6 @@ img {
     .services-grid {
         gap: 24px;
     }
-
 }
 
 
@@ -990,6 +984,7 @@ img {
 
     .nav-menu {
         gap: 12px;
+
         margin-left: 10px;
     }
 
@@ -1002,14 +997,15 @@ img {
     }
 
     .service-card {
-        width: min(760px, 100%);
+        width:
+            min(760px, 100%);
+
         margin: 0 auto;
     }
 
     .price-card {
         padding: 25px 27px;
     }
-
 }
 
 
@@ -1024,7 +1020,8 @@ img {
     }
 
     .nav-container {
-        width: calc(100% - 30px);
+        width:
+            calc(100% - 30px);
     }
 
     .nav-menu {
@@ -1038,7 +1035,6 @@ img {
     .nav-booking {
         margin-left: 10px;
     }
-
 }
 
 
@@ -1055,11 +1051,13 @@ img {
 
     .hero-content {
         width: 100%;
+
         margin-top: 40px;
     }
 
     .hero h1 {
         font-size: 48px;
+
         letter-spacing: -2px;
     }
 
@@ -1082,11 +1080,11 @@ img {
     }
 
     .section-container {
-        width: calc(100% - 30px);
+        width:
+            calc(100% - 30px);
     }
 
     .services-section,
-    .booking-section,
     .prices-section,
     .contact-section {
         padding: 85px 0;
@@ -1112,6 +1110,7 @@ img {
 
     .price-card {
         flex-direction: column;
+
         align-items: flex-start;
 
         gap: 16px;
@@ -1130,7 +1129,6 @@ img {
     .contact-detail {
         padding: 24px;
     }
-
 }
 
 
@@ -1140,14 +1138,25 @@ img {
 
 @media (max-width: 430px) {
 
+    .nav-container {
+        width:
+            calc(100% - 24px);
+    }
+
     .logo span {
         font-size: 17px;
+
         letter-spacing: 2px;
     }
 
     .logo small {
         font-size: 8px;
+
         letter-spacing: 3px;
+    }
+
+    .social-icons {
+        gap: 5px;
     }
 
     .social-icon {
@@ -1162,6 +1171,7 @@ img {
 
     .nav-booking {
         padding: 8px 11px;
+
         font-size: 8px;
     }
 
@@ -1176,5 +1186,4 @@ img {
     .price-value {
         font-size: 21px;
     }
-
 }
