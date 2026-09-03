@@ -14,16 +14,20 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #11100e;
     color: #ffffff;
-
+    line-height: 1.7;
     overflow-x: hidden;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -33,7 +37,6 @@ a {
 
 .navbar {
     position: fixed;
-
     top: 0;
     left: 0;
 
@@ -47,32 +50,21 @@ a {
     border-bottom:
         1px solid rgba(255, 255, 255, 0.10);
 
-    backdrop-filter:
-        blur(16px);
-
-    -webkit-backdrop-filter:
-        blur(16px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
-
 .nav-container {
-    width:
-        min(1400px, calc(100% - 80px));
+    width: min(1400px, calc(100% - 80px));
+    height: 100%;
 
-    height:
-        100%;
+    margin: 0 auto;
 
-    margin:
-        0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    gap:
-        18px;
+    gap: 20px;
 }
 
 
@@ -81,50 +73,44 @@ a {
 ========================================= */
 
 .logo {
-    display:
-        flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    flex-direction:
-        column;
+    flex-shrink: 0;
 
-    justify-content:
-        center;
+    line-height: 1;
+}
 
-    flex-shrink:
-        0;
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
 
-    line-height:
-        1;
+.logo small {
+    margin-top: 4px;
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    color: #c39a55;
 }
 
 
-.logo-main {
-    font-size:
-        20px;
+/* =========================================
+   NAV JOBB OLDAL
+========================================= */
 
-    font-weight:
-        700;
+.nav-right {
+    display: flex;
+    align-items: center;
 
-    letter-spacing:
-        2.5px;
-}
+    flex: 1;
+    justify-content: flex-end;
 
-
-.logo-sub {
-    margin-top:
-        4px;
-
-    font-size:
-        9px;
-
-    font-weight:
-        600;
-
-    letter-spacing:
-        4px;
-
-    color:
-        #c39a55;
+    gap: 14px;
 }
 
 
@@ -132,42 +118,23 @@ a {
    SOCIAL IKONOK
 ========================================= */
 
-.social-links {
-    display:
-        flex;
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
 
-    align-items:
-        center;
-
-    gap:
-        7px;
-
-    margin-left:
-        2px;
-
-    flex-shrink:
-        0;
+    flex-shrink: 0;
 }
 
-
 .social-icon {
-    width:
-        30px;
+    width: 30px;
+    height: 30px;
 
-    height:
-        30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    border-radius:
-        50%;
+    border-radius: 50%;
 
     border:
         1px solid rgba(255, 255, 255, 0.22);
@@ -175,8 +142,7 @@ a {
     background:
         rgba(255, 255, 255, 0.07);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
     transition:
         transform .25s ease,
@@ -184,87 +150,61 @@ a {
         border-color .25s ease;
 }
 
-
 .social-icon:hover {
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 
     background:
-        rgba(255, 255, 255, 0.16);
+        rgba(195, 154, 85, 0.16);
 
     border-color:
-        rgba(255, 255, 255, 0.5);
-}
+        rgba(195, 154, 85, 0.65);
 
+    color: #d2ad73;
+}
 
 .social-icon svg {
-    width:
-        15px;
+    width: 15px;
+    height: 15px;
 
-    height:
-        15px;
-
-    fill:
-        none;
-
-    stroke:
-        currentColor;
-
-    stroke-width:
-        1.8;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
 }
-
 
 .social-icon:nth-child(2) svg,
 .social-icon:nth-child(3) svg {
-    fill:
-        currentColor;
-
-    stroke:
-        none;
+    fill: currentColor;
+    stroke: none;
 }
 
 
 /* =========================================
-   IDŐPONTFOGLALÁS
+   KIEMELT IDŐPONTFOGLALÁS
 ========================================= */
 
 .nav-booking {
-    display:
-        inline-flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    align-items:
-        center;
+    margin-left: 28px;
 
-    justify-content:
-        center;
-
-    margin-left:
-        105px;
-
-    padding:
-        10px 18px;
+    padding: 10px 18px;
 
     border:
         1px solid rgba(195, 154, 85, .65);
 
-    border-radius:
-        999px;
+    border-radius: 999px;
 
     background:
         rgba(195, 154, 85, .08);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    font-size:
-        12px;
+    font-size: 12px;
+    font-weight: 700;
 
-    font-weight:
-        700;
-
-    white-space:
-        nowrap;
+    white-space: nowrap;
 
     transition:
         background .25s ease,
@@ -272,19 +212,13 @@ a {
         transform .25s ease;
 }
 
-
 .nav-booking:hover {
-    background:
-        #c39a55;
+    background: #c39a55;
+    border-color: #c39a55;
 
-    border-color:
-        #c39a55;
+    color: #171614;
 
-    color:
-        #171614;
-
-    transform:
-        translateY(-1px);
+    transform: translateY(-1px);
 }
 
 
@@ -293,91 +227,56 @@ a {
 ========================================= */
 
 .nav-menu {
-    margin-left:
-        auto;
+    display: flex;
+    align-items: center;
 
-    display:
-        flex;
+    gap: 25px;
 
-    align-items:
-        center;
+    margin-left: 28px;
 
-    gap:
-        26px;
-
-    height:
-        100%;
+    height: 100%;
 }
-
 
 .nav-menu a {
-    position:
-        relative;
+    position: relative;
 
-    display:
-        flex;
+    display: flex;
+    align-items: center;
 
-    align-items:
-        center;
+    height: 100%;
 
-    height:
-        100%;
+    color: rgba(255, 255, 255, .76);
 
-    color:
-        rgba(255, 255, 255, .76);
+    font-size: 13px;
+    font-weight: 600;
 
-    font-size:
-        13px;
+    white-space: nowrap;
 
-    font-weight:
-        600;
-
-    white-space:
-        nowrap;
-
-    transition:
-        color .25s ease;
+    transition: color .25s ease;
 }
 
-
-.nav-menu a:hover,
-.nav-menu a.active {
-    color:
-        #ffffff;
+.nav-menu a:hover {
+    color: #ffffff;
 }
-
 
 .nav-menu a::after {
-    content:
-        "";
+    content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    left:
-        0;
+    left: 0;
+    bottom: 18px;
 
-    bottom:
-        18px;
+    width: 0;
+    height: 2px;
 
-    width:
-        0;
+    background: #c39a55;
 
-    height:
-        2px;
-
-    background:
-        #c39a55;
-
-    transition:
-        width .25s ease;
+    transition: width .25s ease;
 }
 
-
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-    width:
-        100%;
+.nav-menu a:hover::after {
+    width: 100%;
 }
 
 
@@ -386,38 +285,23 @@ a {
 ========================================= */
 
 .hero {
-    position:
-        relative;
+    position: relative;
 
-    min-height:
-        100vh;
+    min-height: 100vh;
+    width: 100%;
 
-    width:
-        100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    overflow:
-        hidden;
+    overflow: hidden;
 
     background-image:
         url("images/hero-bg.jpg");
 
-    background-size:
-        cover;
-
-    background-position:
-        center center;
-
-    background-repeat:
-        no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 
@@ -426,14 +310,10 @@ a {
 ========================================= */
 
 .hero-overlay {
-    position:
-        absolute;
+    position: absolute;
+    inset: 0;
 
-    inset:
-        0;
-
-    z-index:
-        1;
+    z-index: 1;
 
     background:
         linear-gradient(
@@ -456,83 +336,52 @@ a {
 ========================================= */
 
 .hero-content {
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        2;
+    z-index: 2;
 
-    width:
-        min(900px, calc(100% - 40px));
+    width: min(900px, calc(100% - 40px));
 
-    text-align:
-        center;
+    text-align: center;
 
-    margin-top:
-        82px;
+    margin-top: 82px;
 }
 
+.hero-kicker {
+    margin-bottom: 18px;
 
-.hero-eyebrow {
-    margin-bottom:
-        18px;
+    color: #d2ad73;
 
-    color:
-        #d2ad73;
+    font-size: 12px;
+    font-weight: 700;
 
-    font-size:
-        12px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        5px;
+    letter-spacing: 5px;
 }
-
 
 .hero h1 {
-    margin:
-        0;
+    margin: 0;
 
-    font-size:
-        clamp(52px, 7vw, 100px);
+    font-size: clamp(52px, 7vw, 100px);
 
-    line-height:
-        .98;
+    line-height: .98;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        -3px;
+    letter-spacing: -3px;
 
     text-shadow:
         0 4px 30px rgba(0, 0, 0, .35);
 }
 
-
-.hero h1 span {
-    font-weight:
-        400;
-}
-
-
 .hero-text {
-    width:
-        min(650px, 100%);
+    width: min(650px, 100%);
 
-    margin:
-        30px auto 0;
+    margin: 30px auto 0;
 
-    color:
-        rgba(255,255,255,.82);
+    color: rgba(255,255,255,.82);
 
-    font-size:
-        16px;
-
-    line-height:
-        1.8;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 
@@ -541,47 +390,28 @@ a {
 ========================================= */
 
 .hero-buttons {
-    display:
-        flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    align-items:
-        center;
+    gap: 12px;
 
-    justify-content:
-        center;
-
-    gap:
-        12px;
-
-    margin-top:
-        35px;
+    margin-top: 35px;
 }
 
-
 .btn {
-    min-width:
-        165px;
+    min-width: 165px;
 
-    display:
-        inline-flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    align-items:
-        center;
+    padding: 14px 25px;
 
-    justify-content:
-        center;
+    border-radius: 999px;
 
-    padding:
-        14px 25px;
-
-    border-radius:
-        999px;
-
-    font-size:
-        13px;
-
-    font-weight:
-        700;
+    font-size: 13px;
+    font-weight: 700;
 
     transition:
         transform .25s ease,
@@ -589,534 +419,418 @@ a {
         border-color .25s ease;
 }
 
-
 .btn:hover {
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 }
-
 
 .btn-primary {
-    background:
-        #ffffff;
+    background: #ffffff;
+    color: #171614;
 
-    color:
-        #171614;
+    border: 1px solid #ffffff;
 }
-
 
 .btn-primary:hover {
-    background:
-        #e8d5b7;
+    background: #e8d5b7;
+    border-color: #e8d5b7;
 }
 
-
-.btn-secondary {
+.btn-outline {
     border:
         1px solid rgba(255,255,255,.55);
 
     background:
         rgba(255,255,255,.04);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 }
 
-
-.btn-secondary:hover {
+.btn-outline:hover {
     background:
-        rgba(255,255,255,.13);
+        rgba(195,154,85,.20);
 
     border-color:
-        #ffffff;
+        #c39a55;
+
+    color: #ffffff;
 }
 
 
 /* =========================================
-   GÖRGESS LE
+   SCROLL DOWN
 ========================================= */
 
 .scroll-down {
-    position:
-        absolute;
+    position: absolute;
 
-    z-index:
-        3;
+    z-index: 3;
 
-    right:
-        35px;
+    right: 35px;
+    bottom: 35px;
 
-    bottom:
-        35px;
+    width: 28px;
+    height: 40px;
 
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    gap:
-        7px;
-
-    color:
-        rgba(255,255,255,.75);
-
-    font-size:
-        10px;
-
-    letter-spacing:
-        2px;
-
-    writing-mode:
-        vertical-rl;
-
-    transition:
-        color .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.scroll-down span {
+    display: block;
 
-.scroll-down:hover {
-    color:
-        #d2ad73;
+    width: 18px;
+    height: 18px;
+
+    border-right: 1px solid #c39a55;
+    border-bottom: 1px solid #c39a55;
+
+    transform: rotate(45deg);
+
+    transition: transform .25s ease;
 }
 
-
-.scroll-down .arrow {
-    font-size:
-        18px;
-
-    line-height:
-        1;
-}
-
-
-/* =========================================
-   SZOLGÁLTATÁSOK
-   UGYANAZ A SZÍN, NEM KÉK
-========================================= */
-
-.services-section {
-    min-height:
-        auto;
-
-    padding:
-        120px 40px;
-
-    background:
-        #11100e;
-
-    color:
-        #ffffff;
-}
-
-
-.services-container {
-    width:
-        min(1450px, 100%);
-
-    margin:
-        0 auto;
-}
-
-
-/* =========================================
-   SZOLGÁLTATÁSOK FEJLÉC
-========================================= */
-
-.services-heading {
-    width:
-        min(800px, 100%);
-
-    margin:
-        0 auto 60px;
-
-    text-align:
-        center;
-}
-
-
-.services-heading span {
-    display:
-        block;
-
-    margin-bottom:
-        15px;
-
-    color:
-        #c39a55;
-
-    font-size:
-        11px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        5px;
-}
-
-
-.services-heading h2 {
-    margin-bottom:
-        20px;
-
-    color:
-        #ffffff;
-
-    font-size:
-        clamp(42px, 5vw, 70px);
-
-    line-height:
-        1;
-
-    letter-spacing:
-        -2px;
-}
-
-
-.services-heading p {
-    width:
-        min(650px, 100%);
-
-    margin:
-        0 auto;
-
-    color:
-        rgba(255,255,255,.65);
-
-    font-size:
-        16px;
-
-    line-height:
-        1.8;
-}
-
-
-/* =========================================
-   3 OSZLOP
-========================================= */
-
-.services-grid {
-    width:
-        min(1400px, 100%);
-
-    margin:
-        0 auto;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    gap:
-        32px;
-
-    align-items:
-        stretch;
-}
-
-
-/* =========================================
-   SZOLGÁLTATÁS KÁRTYA
-========================================= */
-
-.service-card {
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    min-width:
-        0;
-}
-
-
-/* =========================================
-   KÉP
-========================================= */
-
-.service-image {
-    width:
-        100%;
-
-    aspect-ratio:
-        1.55 / 1;
-
-    overflow:
-        hidden;
-
-    margin-bottom:
-        30px;
-}
-
-
-.service-image img {
-    display:
-        block;
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        cover;
-
-    transition:
-        transform .6s ease;
-}
-
-
-.service-card:hover
-.service-image img {
+.scroll-down:hover span {
     transform:
-        scale(1.045);
+        rotate(45deg)
+        translate(4px, 4px);
 }
 
 
 /* =========================================
-   SZOLGÁLTATÁS SZÖVEG
+   ÁLTALÁNOS SZEKCIÓ
 ========================================= */
 
-.service-content {
-    display:
-        flex;
+.section-container {
+    width: min(1240px, calc(100% - 60px));
 
-    flex-direction:
-        column;
-
-    flex:
-        1;
-
-    text-align:
-        left;
+    margin: 0 auto;
 }
 
+.section-heading {
+    width: min(800px, 100%);
 
-.service-content h3 {
-    min-height:
-        105px;
+    margin: 0 auto 60px;
 
-    margin-bottom:
-        20px;
+    text-align: center;
+}
 
-    color:
-        #ffffff;
+.section-kicker {
+    margin-bottom: 15px;
+
+    color: #c39a55;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size:
-        25px;
+    font-size: clamp(42px, 5vw, 70px);
 
-    line-height:
-        1.3;
+    line-height: 1;
 
-    font-style:
-        italic;
+    font-weight: 400;
+
+    letter-spacing: -2px;
 }
 
+.section-heading > p:last-child {
+    width: min(650px, 100%);
 
-.quote-mark {
-    display:
-        inline-block;
+    margin: 0 auto;
 
-    margin-right:
-        7px;
+    color: rgba(255,255,255,.65);
 
-    color:
-        #c39a55;
+    font-size: 16px;
 
-    font-size:
-        31px;
-
-    font-weight:
-        700;
-
-    font-style:
-        normal;
-}
-
-
-.service-content p {
-    margin-bottom:
-        17px;
-
-    color:
-        rgba(255,255,255,.70);
-
-    font-size:
-        15px;
-
-    line-height:
-        1.65;
-}
-
-
-.service-content strong {
-    color:
-        #ffffff;
-
-    font-weight:
-        700;
-}
-
-
-.service-intro {
-    margin-bottom:
-        24px !important;
-
-    color:
-        rgba(255,255,255,.82) !important;
-
-    font-size:
-        14px !important;
+    line-height: 1.8;
 }
 
 
 /* =========================================
-   RÓLUNK GOMB
+   SZOLGÁLTATÁSOK
 ========================================= */
 
+.services-section {
+    padding: 120px 0;
+
+    background: #11100e;
+
+    color: #ffffff;
+}
+
+.services-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 32px;
+
+    align-items: stretch;
+}
+
+.service-card {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: transparent;
+}
+
+.service-image {
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    margin-bottom: 30px;
+
+    border:
+        1px solid rgba(195, 154, 85, 0.18);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    text-align: left;
+}
+
+.service-content h3 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+    line-height: 1.3;
+
+    font-style: italic;
+}
+
+.service-content p {
+    margin-bottom: 17px;
+
+    color: rgba(255,255,255,.70);
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.service-content strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
 .service-button {
-    align-self:
-        center;
+    align-self: flex-start;
 
-    margin-top:
-        auto;
+    display: inline-flex;
 
-    padding:
-        13px 34px;
+    margin-top: auto;
+    padding: 11px 20px;
 
-    border-radius:
-        999px;
+    border:
+        1px solid #c39a55;
+
+    color: #c39a55;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+.service-button:hover {
+    background: #c39a55;
+    color: #11100e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   IDŐPONTFOGLALÁS
+========================================= */
+
+.booking-section {
+    padding: 120px 0;
 
     background:
-        #ffffff;
+        linear-gradient(
+            rgba(17, 16, 14, 0.92),
+            rgba(17, 16, 14, 0.92)
+        ),
+        url("images/hero-bg.jpg");
 
-    color:
-        #777777;
+    background-size: cover;
+    background-position: center;
+}
 
-    font-size:
-        14px;
+.booking-content {
+    width: min(760px, 100%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.booking-content h2 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(40px, 5vw, 60px);
+
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.booking-content > p:not(.section-kicker) {
+    margin-bottom: 32px;
+
+    color: rgba(255,255,255,.70);
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   ÁRLISTA
+========================================= */
+
+.prices-section {
+    padding: 120px 0;
+
+    background: #11100e;
+}
+
+.price-list {
+    width: min(1050px, 100%);
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.price-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 27px 32px;
+
+    background: #171512;
+
+    border:
+        1px solid rgba(195, 154, 85, 0.18);
 
     transition:
         transform .25s ease,
-        background .25s ease,
-        color .25s ease;
+        border-color .25s ease,
+        background .25s ease;
 }
 
+.price-card:hover {
+    transform: translateX(5px);
 
-.service-button:hover {
-    transform:
-        translateY(-3px);
+    background: #1b1916;
 
-    background:
-        #e8d5b7;
-
-    color:
-        #333333;
+    border-color:
+        rgba(195, 154, 85, 0.50);
 }
 
-
-/* =========================================
-   ÁLTALÁNOS SZEKCIÓK
-========================================= */
-
-.content-section {
-    min-height:
-        70vh;
-
-    padding:
-        130px 30px;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(195,154,85,.08),
-            transparent 45%
-        ),
-        #11100e;
+.price-info {
+    flex: 1;
+    min-width: 0;
 }
 
+.price-info h3 {
+    margin-bottom: 7px;
 
-.section-inner {
-    width:
-        min(850px, 100%);
+    color: #e8d5b7;
 
-    text-align:
-        center;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+    font-weight: 400;
+
+    line-height: 1.35;
 }
 
+.price-info p {
+    color: #aaa296;
 
-.section-label {
-    display:
-        block;
+    font-size: 14px;
 
-    margin-bottom:
-        15px;
-
-    color:
-        #c39a55;
-
-    font-size:
-        11px;
-
-    letter-spacing:
-        4px;
+    line-height: 1.7;
 }
 
+.price-value {
+    flex-shrink: 0;
 
-.section-inner h2 {
-    margin-bottom:
-        25px;
+    color: #c39a55;
 
-    color:
-        #ffffff;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    font-size:
-        clamp(38px, 5vw, 65px);
+    font-size: 24px;
+    font-weight: 400;
 
-    line-height:
-        1;
-
-    letter-spacing:
-        -2px;
+    white-space: nowrap;
 }
 
-
-.section-inner p {
-    max-width:
-        650px;
-
-    margin:
-        0 auto 30px;
-
-    color:
-        rgba(255,255,255,.65);
-
-    font-size:
-        17px;
-
-    line-height:
-        1.8;
+.price-card-large {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -1125,136 +839,104 @@ a {
 ========================================= */
 
 .contact-section {
-    min-height:
-        55vh;
+    padding: 120px 0;
 
-    padding:
-        120px 30px;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(195,154,85,.08),
-            transparent 50%
-        ),
-        #11100e;
+    background: #15130f;
 }
-
-
-.contact-content {
-    width:
-        min(850px, 100%);
-
-    margin:
-        0 auto;
-
-    text-align:
-        center;
-}
-
-
-.contact-content h2 {
-    margin-bottom:
-        45px;
-
-    color:
-        #ffffff;
-
-    font-size:
-        clamp(38px, 5vw, 65px);
-
-    line-height:
-        1;
-
-    letter-spacing:
-        -2px;
-}
-
 
 .contact-details {
-    display:
-        flex;
+    width: min(800px, 100%);
 
-    align-items:
-        stretch;
+    margin: 0 auto;
 
-    justify-content:
-        center;
+    display: grid;
 
-    gap:
-        70px;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
 }
-
 
 .contact-detail {
-    min-width:
-        260px;
+    display: flex;
+    flex-direction: column;
 
-    display:
-        flex;
+    padding: 28px 30px;
 
-    flex-direction:
-        column;
+    background: #11100e;
 
-    gap:
-        8px;
+    border:
+        1px solid rgba(195, 154, 85, 0.18);
 
     transition:
-        transform .25s ease;
+        transform .25s ease,
+        border-color .25s ease;
 }
-
 
 .contact-detail:hover {
-    transform:
-        translateY(-3px);
-}
+    transform: translateY(-4px);
 
+    border-color:
+        rgba(195, 154, 85, 0.50);
+}
 
 .contact-label {
-    color:
-        #c39a55;
+    margin-bottom: 5px;
 
-    font-size:
-        11px;
+    color: #c39a55;
 
-    font-weight:
-        700;
+    font-size: 10px;
+    font-weight: 700;
 
-    letter-spacing:
-        3px;
+    letter-spacing: 2px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 }
-
 
 .contact-value {
-    color:
-        rgba(255,255,255,.85);
+    color: #e8d5b7;
 
-    font-size:
-        16px;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    line-height:
-        1.5;
+    font-size: 19px;
 
-    transition:
-        color .25s ease;
+    word-break: break-word;
 }
 
 
-.contact-detail:hover .contact-value {
-    color:
-        #ffffff;
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    padding: 35px 0;
+
+    background: #11100e;
+
+    border-top:
+        1px solid rgba(195, 154, 85, 0.15);
+
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 8px;
+
+    color: #c39a55;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #77736c;
+
+    font-size: 11px;
 }
 
 
@@ -1262,31 +944,27 @@ a {
    TABLET
 ========================================= */
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
 
     .nav-container {
-        width:
-            calc(100% - 40px);
+        width: min(100% - 40px, 1400px);
     }
 
     .nav-booking {
-        margin-left:
-            30px;
+        margin-left: 15px;
     }
 
     .nav-menu {
-        gap:
-            18px;
+        gap: 17px;
+        margin-left: 16px;
     }
 
     .nav-menu a {
-        font-size:
-            12px;
+        font-size: 11px;
     }
 
     .services-grid {
-        gap:
-            24px;
+        gap: 24px;
     }
 
 }
@@ -1296,35 +974,69 @@ a {
    KISEBB TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
+
+    .nav-right {
+        gap: 10px;
+    }
 
     .nav-booking {
-        margin-left:
-            15px;
+        margin-left: 10px;
 
-        padding:
-            9px 13px;
+        padding: 9px 14px;
 
-        font-size:
-            11px;
+        font-size: 10px;
     }
 
     .nav-menu {
-        gap:
-            13px;
+        gap: 12px;
+        margin-left: 10px;
     }
 
     .nav-menu a {
-        font-size:
-            11px;
+        font-size: 10px;
     }
 
     .services-grid {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
+    }
 
-        width:
-            min(700px, 100%);
+    .service-card {
+        width: min(760px, 100%);
+        margin: 0 auto;
+    }
+
+    .price-card {
+        padding: 25px 27px;
+    }
+
+}
+
+
+/* =========================================
+   MOBIL NAVBAR
+========================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        height: 72px;
+    }
+
+    .nav-container {
+        width: calc(100% - 30px);
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-right {
+        justify-content: flex-end;
+    }
+
+    .nav-booking {
+        margin-left: 10px;
     }
 
 }
@@ -1334,212 +1046,135 @@ a {
    MOBIL
 ========================================= */
 
-@media (max-width: 850px) {
+@media (max-width: 650px) {
 
-    .navbar {
-        height:
-            72px;
-    }
-
-    .nav-container {
-        width:
-            calc(100% - 30px);
-
-        gap:
-            12px;
-    }
-
-    .logo-main {
-        font-size:
-            16px;
-
-        letter-spacing:
-            1.8px;
-    }
-
-    .logo-sub {
-        font-size:
-            7px;
-
-        letter-spacing:
-            3px;
-    }
-
-    .social-links {
-        gap:
-            5px;
-    }
-
-    .social-icon {
-        width:
-            28px;
-
-        height:
-            28px;
-    }
-
-    .social-icon svg {
-        width:
-            14px;
-
-        height:
-            14px;
-    }
-
-    .nav-booking {
-        display:
-            none;
-    }
-
-    .nav-menu {
-        display:
-            none;
+    .hero {
+        padding:
+            110px 20px 80px;
     }
 
     .hero-content {
-        margin-top:
-            72px;
+        width: 100%;
+        margin-top: 40px;
     }
 
     .hero h1 {
-        font-size:
-            clamp(45px, 11vw, 72px);
-
-        letter-spacing:
-            -2px;
+        font-size: 48px;
+        letter-spacing: -2px;
     }
 
     .hero-text {
-        font-size:
-            15px;
-    }
-
-    .services-section {
-        padding:
-            90px 20px;
-    }
-
-    .services-heading h2 {
-        font-size:
-            48px;
-    }
-
-    .content-section {
-        padding:
-            100px 20px;
-    }
-
-}
-
-
-/* =========================================
-   TELEFON
-========================================= */
-
-@media (max-width: 600px) {
-
-    .services-heading h2 {
-        font-size:
-            42px;
-    }
-
-    .services-heading p {
-        font-size:
-            14px;
-    }
-
-    .service-content h3 {
-        min-height:
-            auto;
-
-        font-size:
-            22px;
-    }
-
-    .service-content p {
-        font-size:
-            14px;
-    }
-
-    .service-image {
-        margin-bottom:
-            24px;
-    }
-
-    .contact-section {
-        padding:
-            90px 20px;
-    }
-
-    .contact-details {
-        flex-direction:
-            column;
-
-        gap:
-            30px;
-    }
-
-    .contact-detail {
-        min-width:
-            0;
-    }
-
-}
-
-
-/* =========================================
-   KIS TELEFON
-========================================= */
-
-@media (max-width: 500px) {
-
-    .nav-container {
-        width:
-            calc(100% - 22px);
-    }
-
-    .logo-main {
-        font-size:
-            14px;
-    }
-
-    .social-icon {
-        width:
-            26px;
-
-        height:
-            26px;
-    }
-
-    .hero {
-        min-height:
-            650px;
+        font-size: 15px;
     }
 
     .hero-buttons {
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        width:
-            100%;
+        width: 100%;
     }
 
-    .btn {
-        width:
-            190px;
+    .hero-buttons .btn {
+        width: 100%;
     }
 
     .scroll-down {
-        right:
-            15px;
-
-        bottom:
-            20px;
+        display: none;
     }
 
-    .service-button {
-        padding:
-            12px 30px;
+    .section-container {
+        width: calc(100% - 30px);
+    }
+
+    .services-section,
+    .booking-section,
+    .prices-section,
+    .contact-section {
+        padding: 85px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: 42px;
+    }
+
+    .service-image {
+        height: 230px;
+
+        margin-bottom: 24px;
+    }
+
+    .service-content h3 {
+        font-size: 23px;
+    }
+
+    .price-card {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 16px;
+
+        padding: 24px;
+    }
+
+    .price-value {
+        font-size: 22px;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-detail {
+        padding: 24px;
+    }
+
+}
+
+
+/* =========================================
+   KIS MOBIL
+========================================= */
+
+@media (max-width: 430px) {
+
+    .logo span {
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .logo small {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .nav-booking {
+        padding: 8px 11px;
+        font-size: 8px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .price-info h3 {
+        font-size: 19px;
+    }
+
+    .price-value {
+        font-size: 21px;
     }
 
 }
