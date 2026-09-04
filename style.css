@@ -37,6 +37,7 @@ img {
 
 .navbar {
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -56,6 +57,7 @@ img {
 
 .nav-container {
     width: min(1400px, calc(100% - 80px));
+
     height: 100%;
 
     margin: 0 auto;
@@ -63,7 +65,9 @@ img {
     display: flex;
     align-items: center;
 
-    gap: 20px;
+    justify-content: flex-start;
+
+    gap: 0;
 }
 
 
@@ -84,6 +88,7 @@ img {
 .logo span {
     font-size: 20px;
     font-weight: 700;
+
     letter-spacing: 2.5px;
 }
 
@@ -92,6 +97,7 @@ img {
 
     font-size: 9px;
     font-weight: 600;
+
     letter-spacing: 4px;
 
     color: #c39a55;
@@ -104,17 +110,18 @@ img {
 
 .nav-right {
     display: flex;
+
     align-items: center;
 
-    flex: 1;
-
-    min-width: 0;
+    flex: 0 0 auto;
 
     justify-content: flex-start;
 
-    gap: 14px;
+    gap: 0;
 
-    margin-left: 28px;
+    margin-left: 42px;
+
+    min-width: 0;
 }
 
 
@@ -124,6 +131,7 @@ img {
 
 .social-icons {
     display: flex;
+
     align-items: center;
 
     gap: 7px;
@@ -136,6 +144,7 @@ img {
     height: 30px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -187,7 +196,7 @@ img {
 
 
 /* =========================================
-   KIEMELT IDŐPONTFOGLALÁS
+   IDŐPONTFOGLALÁS
 ========================================= */
 
 .nav-booking {
@@ -236,6 +245,45 @@ img {
 
 
 /* =========================================
+   BEJELENTKEZÉSI INFORMÁCIÓ
+========================================= */
+
+.nav-contact {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-left: 14px;
+
+    white-space: nowrap;
+}
+
+.nav-contact-title {
+    color: rgba(255,255,255,.72);
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: .2px;
+}
+
+.nav-contact a {
+    color: #d2ad73;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: color .25s ease;
+}
+
+.nav-contact a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================
    MENÜ
 ========================================= */
 
@@ -248,7 +296,7 @@ img {
 
     height: 100%;
 
-    margin-left: auto;
+    margin-left: 25px;
 
     flex-shrink: 0;
 }
@@ -307,9 +355,11 @@ img {
     position: relative;
 
     min-height: 100vh;
+
     width: 100%;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -319,7 +369,9 @@ img {
         url("images/hero-bg.jpg");
 
     background-size: cover;
+
     background-position: center center;
+
     background-repeat: no-repeat;
 }
 
@@ -360,7 +412,8 @@ img {
 
     z-index: 2;
 
-    width: min(900px, calc(100% - 40px));
+    width:
+        min(900px, calc(100% - 40px));
 
     text-align: center;
 
@@ -381,7 +434,8 @@ img {
 .hero h1 {
     margin: 0;
 
-    font-size: clamp(52px, 7vw, 100px);
+    font-size:
+        clamp(52px, 7vw, 100px);
 
     line-height: .98;
 
@@ -394,11 +448,14 @@ img {
 }
 
 .hero-text {
-    width: min(650px, 100%);
+    width:
+        min(650px, 100%);
 
-    margin: 30px auto 0;
+    margin:
+        30px auto 0;
 
-    color: rgba(255,255,255,.82);
+    color:
+        rgba(255,255,255,.82);
 
     font-size: 16px;
 
@@ -458,6 +515,7 @@ img {
 
 .btn-primary:hover {
     background: #e8d5b7;
+
     border-color: #e8d5b7;
 }
 
@@ -498,6 +556,7 @@ img {
     height: 40px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
@@ -625,6 +684,7 @@ img {
     min-width: 0;
 
     display: flex;
+
     flex-direction: column;
 
     background: transparent;
@@ -694,40 +754,104 @@ img {
     font-weight: 700;
 }
 
-.service-button {
-    align-self: flex-start;
 
-    display: inline-flex;
+/* =========================================
+   VÉLEMÉNYEK
+========================================= */
 
-    margin-top: auto;
+.reviews-section {
+    padding: 120px 0;
 
-    padding: 11px 20px;
+    background: #15130f;
+
+    color: #ffffff;
+}
+
+.reviews-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.review-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 250px;
+
+    padding: 30px;
+
+    background: #11100e;
 
     border:
-        1px solid #c39a55;
+        1px solid rgba(195, 154, 85, 0.18);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+
+    background: #171512;
+
+    border-color:
+        rgba(195, 154, 85, 0.50);
+}
+
+.review-stars {
+    margin-bottom: 16px;
 
     color: #c39a55;
 
-    font-size: 10px;
+    font-size: 15px;
+
+    letter-spacing: 3px;
+}
+
+.review-text {
+    margin-bottom: 25px;
+
+    color: rgba(255,255,255,.78);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+.review-author {
+    margin-top: auto;
+
+    color: #e8d5b7;
+
+    font-size: 13px;
 
     font-weight: 700;
 
-    letter-spacing: 1.5px;
-
-    text-transform: uppercase;
-
-    transition:
-        background .25s ease,
-        color .25s ease,
-        transform .25s ease;
+    letter-spacing: .5px;
 }
 
-.service-button:hover {
-    background: #c39a55;
+.review-date {
+    margin-top: 4px;
 
-    color: #11100e;
+    color: #77736c;
 
-    transform: translateY(-2px);
+    font-size: 11px;
 }
 
 
@@ -750,6 +874,7 @@ img {
     margin: 0 auto;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 14px;
@@ -952,6 +1077,72 @@ img {
 
 
 /* =========================================
+   VISSZA A TETEJÉRE
+========================================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid #c39a55;
+
+    border-radius: 50%;
+
+    background:
+        rgba(17, 16, 14, .94);
+
+    color: #c39a55;
+
+    font-size: 24px;
+
+    z-index: 999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(25px);
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease,
+        background .25s ease,
+        color .25s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+}
+
+.back-to-top:hover {
+    background: #c39a55;
+
+    color: #11100e;
+
+    transform:
+        translateY(-4px);
+}
+
+
+/* =========================================
    TABLET
 ========================================= */
 
@@ -963,21 +1154,43 @@ img {
     }
 
     .nav-right {
-        gap: 10px;
-
-        margin-left: 18px;
+        margin-left: 28px;
     }
 
-    .nav-booking {
+    .nav-contact {
+        gap: 6px;
         margin-left: 10px;
     }
 
+    .nav-contact-title {
+        font-size: 9px;
+    }
+
+    .nav-contact a {
+        font-size: 9px;
+    }
+
+    .nav-booking {
+        margin-left: 12px;
+        padding: 9px 14px;
+        font-size: 10px;
+    }
+
     .nav-menu {
-        gap: 16px;
+        gap: 17px;
+        margin-left: 16px;
     }
 
     .nav-menu a {
         font-size: 11px;
+    }
+
+    .services-grid {
+        gap: 24px;
+    }
+
+    .reviews-grid {
+        gap: 16px;
     }
 }
 
@@ -986,41 +1199,26 @@ img {
    KISEBB TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
-    .nav-right {
-        gap: 8px;
-    }
-
-    .social-icons {
-        gap: 5px;
-    }
-
-    .nav-booking {
-        padding:
-            9px 13px;
-
-        font-size: 10px;
+    .nav-contact {
+        display: none;
     }
 
     .nav-menu {
-        gap: 11px;
+        gap: 13px;
+        margin-left: 15px;
     }
 
     .nav-menu a {
         font-size: 10px;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
+    .reviews-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
 
-    .service-card {
-        width:
-            min(760px, 100%);
-
-        margin: 0 auto;
-    }
 }
 
 
@@ -1100,6 +1298,7 @@ img {
     }
 
     .services-section,
+    .reviews-section,
     .prices-section,
     .contact-section {
         padding: 85px 0;
@@ -1123,6 +1322,16 @@ img {
         font-size: 23px;
     }
 
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        min-height: auto;
+
+        padding: 24px;
+    }
+
     .price-card {
         flex-direction: column;
 
@@ -1143,6 +1352,16 @@ img {
 
     .contact-detail {
         padding: 24px;
+    }
+
+    .back-to-top {
+        right: 18px;
+        bottom: 18px;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 21px;
     }
 }
 
@@ -1171,11 +1390,22 @@ img {
     }
 
     .social-icons {
-        display: none;
+        gap: 5px;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icon svg {
+        width: 14px;
+        height: 14px;
     }
 
     .nav-booking {
-        padding: 8px 11px;
+        padding:
+            8px 11px;
 
         font-size: 8px;
     }
@@ -1191,4 +1421,5 @@ img {
     .price-value {
         font-size: 21px;
     }
+
 }
