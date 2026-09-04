@@ -37,7 +37,6 @@ img {
 
 .navbar {
     position: fixed;
-
     top: 0;
     left: 0;
 
@@ -64,7 +63,6 @@ img {
 
     display: flex;
     align-items: center;
-
     justify-content: flex-start;
 
     gap: 0;
@@ -88,7 +86,6 @@ img {
 .logo span {
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: 2.5px;
 }
 
@@ -97,7 +94,6 @@ img {
 
     font-size: 9px;
     font-weight: 600;
-
     letter-spacing: 4px;
 
     color: #c39a55;
@@ -110,10 +106,9 @@ img {
 
 .nav-right {
     display: flex;
-
     align-items: center;
 
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 
     justify-content: flex-start;
 
@@ -131,7 +126,6 @@ img {
 
 .social-icons {
     display: flex;
-
     align-items: center;
 
     gap: 7px;
@@ -144,7 +138,6 @@ img {
     height: 30px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -201,7 +194,6 @@ img {
 
 .nav-booking {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
 
@@ -235,9 +227,7 @@ img {
 
 .nav-booking:hover {
     background: #c39a55;
-
     border-color: #c39a55;
-
     color: #171614;
 
     transform: translateY(-1px);
@@ -250,10 +240,9 @@ img {
 
 .nav-contact {
     display: flex;
-
     align-items: center;
 
-    gap: 9px;
+    gap: 8px;
 
     margin-left: 14px;
 
@@ -261,12 +250,10 @@ img {
 }
 
 .nav-contact-title {
-    color: rgba(255,255,255,.72);
+    color: rgba(255, 255, 255, .70);
 
     font-size: 10px;
     font-weight: 600;
-
-    letter-spacing: .2px;
 }
 
 .nav-contact a {
@@ -289,10 +276,9 @@ img {
 
 .nav-menu {
     display: flex;
-
     align-items: center;
 
-    gap: 25px;
+    gap: 23px;
 
     height: 100%;
 
@@ -305,7 +291,6 @@ img {
     position: relative;
 
     display: flex;
-
     align-items: center;
 
     height: 100%;
@@ -317,8 +302,7 @@ img {
 
     white-space: nowrap;
 
-    transition:
-        color .25s ease;
+    transition: color .25s ease;
 }
 
 .nav-menu a:hover {
@@ -338,8 +322,7 @@ img {
 
     background: #c39a55;
 
-    transition:
-        width .25s ease;
+    transition: width .25s ease;
 }
 
 .nav-menu a:hover::after {
@@ -355,11 +338,9 @@ img {
     position: relative;
 
     min-height: 100vh;
-
     width: 100%;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -369,9 +350,7 @@ img {
         url("images/hero-bg.jpg");
 
     background-size: cover;
-
     background-position: center center;
-
     background-repeat: no-repeat;
 }
 
@@ -460,6 +439,60 @@ img {
     font-size: 16px;
 
     line-height: 1.8;
+}
+
+
+/* =========================================
+   FACEBOOK CSOPORT GOMB
+========================================= */
+
+.facebook-group-button {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 32px;
+}
+
+.facebook-group-button a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    border:
+        1px solid #c39a55;
+
+    border-radius: 999px;
+
+    background:
+        rgba(17, 16, 14, 0.55);
+
+    color: #d2ad73;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.facebook-group-button a:hover {
+    background: #c39a55;
+
+    border-color: #c39a55;
+
+    color: #11100e;
+
+    transform: translateY(-2px);
 }
 
 
@@ -684,7 +717,6 @@ img {
     min-width: 0;
 
     display: flex;
-
     flex-direction: column;
 
     background: transparent;
@@ -822,7 +854,8 @@ img {
 .review-text {
     margin-bottom: 25px;
 
-    color: rgba(255,255,255,.78);
+    color:
+        rgba(255,255,255,.78);
 
     font-family:
         Georgia,
@@ -1074,6 +1107,8 @@ img {
 
     font-size: 11px;
 }
+
+
 /* =========================================
    VISSZA A TETEJÉRE
 ========================================= */
@@ -1107,7 +1142,6 @@ img {
     z-index: 999;
 
     opacity: 0;
-
     visibility: hidden;
 
     transform:
@@ -1123,7 +1157,6 @@ img {
 
 .back-to-top.visible {
     opacity: 1;
-
     visibility: visible;
 
     transform:
@@ -1155,13 +1188,13 @@ img {
         margin-left: 28px;
     }
 
-    .nav-contact {
-        gap: 6px;
-        margin-left: 10px;
+    .nav-contact-title {
+        display: none;
     }
 
-    .nav-contact-title {
-        font-size: 9px;
+    .nav-contact {
+        gap: 7px;
+        margin-left: 10px;
     }
 
     .nav-contact a {
@@ -1170,12 +1203,16 @@ img {
 
     .nav-booking {
         margin-left: 12px;
-        padding: 9px 14px;
+
+        padding:
+            9px 14px;
+
         font-size: 10px;
     }
 
     .nav-menu {
-        gap: 17px;
+        gap: 16px;
+
         margin-left: 16px;
     }
 
@@ -1204,8 +1241,9 @@ img {
     }
 
     .nav-menu {
-        gap: 13px;
-        margin-left: 15px;
+        gap: 12px;
+
+        margin-left: 14px;
     }
 
     .nav-menu a {
@@ -1216,7 +1254,6 @@ img {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
     }
-
 }
 
 
@@ -1274,6 +1311,23 @@ img {
 
     .hero-text {
         font-size: 15px;
+    }
+
+    .facebook-group-button {
+        margin-bottom: 26px;
+    }
+
+    .facebook-group-button a {
+        width: 100%;
+
+        padding:
+            12px 18px;
+
+        font-size: 10px;
+
+        letter-spacing: .8px;
+
+        text-align: center;
     }
 
     .hero-buttons {
